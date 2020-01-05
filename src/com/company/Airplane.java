@@ -5,7 +5,7 @@ public class Airplane {
     private static int planeDesignation = 0;
     private int designation;
     private boolean off;
-    private double fuel;
+    public double fuel;
 
     public Airplane() {
         planeDesignation ++;

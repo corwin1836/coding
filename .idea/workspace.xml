@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="" />
+    <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VpCEx7cja2zIfqBrU14k2D877a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,7 +32,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Airport" />
-      <option name="PROGRAM_PARAMETERS" value="15" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -63,25 +70,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577943862309">
+    <state x="422" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578202355299">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="422" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577943862309" />
-    <state width="1872" height="279" key="GridCell.Tab.0.bottom" timestamp="1577948216826">
+    <state x="422" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578202355299" />
+    <state width="1872" height="279" key="GridCell.Tab.0.bottom" timestamp="1578202429355">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1577948216826" />
-    <state width="1872" height="279" key="GridCell.Tab.0.center" timestamp="1577948216826">
+    <state width="1872" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578202429355" />
+    <state width="1872" height="279" key="GridCell.Tab.0.center" timestamp="1578202429354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="279" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1577948216826" />
-    <state width="1872" height="279" key="GridCell.Tab.0.left" timestamp="1577948216826">
+    <state width="1872" height="279" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578202429354" />
+    <state width="1872" height="279" key="GridCell.Tab.0.left" timestamp="1578202429353">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="279" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1577948216826" />
-    <state width="1872" height="279" key="GridCell.Tab.0.right" timestamp="1577948216826">
+    <state width="1872" height="279" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578202429353" />
+    <state width="1872" height="279" key="GridCell.Tab.0.right" timestamp="1578202429355">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="279" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1577948216826" />
+    <state width="1872" height="279" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578202429355" />
   </component>
 </project>
