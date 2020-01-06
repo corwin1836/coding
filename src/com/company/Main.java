@@ -1,54 +1,42 @@
 package com.company;
 
-import java.util.ArrayList;
-
 public class Main {
     private static int tickCounter = 0;
 
     public static void main(String[] args) {
-        //int store = 0;
-
         Airplane[] list = new Airplane[100];
         for (int i = 0; i < list.length; i++) {
             Airplane x = new Airplane();
             list[i] = x;
         }
+
+        Runway [] runways = new Runway [3];
+        for (int i = 0; i < 3; i++) {
+            runways[i] = new Runway();
+        }
+
         while (goSequence(args)) {
-            if (tickCounter % 2 == 0) {
-                list[0].takeOff();
-                list[0] = new Airplane();
-                list[0].takeOff();
-                list[0] = new Airplane();
-                list[0].takeOff();
-                list[0] = new Airplane();
-                tickCounter++;
-            } else {
-                int leastFuel = 0;
-                for (int i = 0; i < list.length; i++) {
-                    if (list[i].getFuel() < list[leastFuel].getFuel()) {
-                        leastFuel = i;
+            for (int i = 0; i < 3; i++) {
+                if (runways[i].inUse()) {
+                    continue;
+                } else {
+                    runways[i].setInUse();
+                    if (tickCounter % 2 == 0) {
+                        list[0].takeOff();
+                    } else {
+                        int leastFuel = 0;
+                        for (int j = 0; j < list.length; j++) {
+                            if (list[j].getFuel() < list[leastFuel].getFuel()) {
+                                leastFuel = j;
+                            }
+                        }
+                        list[leastFuel].landing();
+                        list[leastFuel] = new Airplane();
                     }
                 }
-                list[leastFuel].landing();
-                list[leastFuel] = new Airplane();
-                leastFuel = 0;
-                for (int i = 0; i < list.length; i++) {
-                    if (list[i].getFuel() < list[leastFuel].getFuel()) {
-                        leastFuel = i;
-                    }
-                }
-                list[leastFuel].landing();
-                list[leastFuel] = new Airplane();
-                leastFuel = 0;
-                for (int i = 0; i < list.length; i++) {
-                    if (list[i].getFuel() < list[leastFuel].getFuel()) {
-                        leastFuel = i;
-                    }
-                }
-                list[leastFuel].landing();
-                list[leastFuel] = new Airplane();
-                tickCounter++;
+                runways[i].setAvailable();
             }
+            tickCounter ++;
         }
     }
 
