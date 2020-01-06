@@ -1,4 +1,6 @@
 package com.company;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main {
     private static int tickCounter = 0;
@@ -38,6 +40,9 @@ public class Main {
             }
             tickCounter ++;
         }
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(formatter.format(date));
     }
 
     public static boolean goSequence(String[] args) {
