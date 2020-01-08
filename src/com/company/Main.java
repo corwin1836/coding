@@ -19,12 +19,10 @@ public class Main {
 
         while (goSequence(args)) {
             for (int i = 0; i < 3; i++) {
-                if (runways[i].inUse()) {
-                    continue;
-                } else {
-                    runways[i].setInUse();
+                if (!runways[i].inUse()) {
                     if (tickCounter % 2 == 0) {
-                        list[0].takeOff();
+                        runways[i].takeOffPlane(list[0]);
+                        list[0] = new Airplane();
                     } else {
                         int leastFuel = 0;
                         for (int j = 0; j < list.length; j++) {
@@ -32,16 +30,16 @@ public class Main {
                                 leastFuel = j;
                             }
                         }
-                        list[leastFuel].landing();
+                        runways[i].landPlane(list[leastFuel]);
                         list[leastFuel] = new Airplane();
                     }
                 }
-                runways[i].setAvailable();
+                runways[i].tick();
             }
             tickCounter ++;
         }
         Date date = new Date();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         System.out.println(formatter.format(date));
     }
 
@@ -59,3 +57,5 @@ public class Main {
         }
     }
 }
+
+

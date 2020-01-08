@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Airport.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Runway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Runway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,20 +30,44 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Airport" />
-      <option name="PROGRAM_PARAMETERS" value="2" />
+      <option name="PROGRAM_PARAMETERS" value="30" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestAirplane.hasLanded_ReturnsFalse_Immediately" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Airport" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAirplane" />
+      <option name="METHOD_NAME" value="hasLanded_ReturnsFalse_Immediately" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.TestAirplane.hasLanded_ReturnsFalse_Immediately" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestAirplane.hasLanded_ReturnsFalse_Immediately" />
       </list>
     </recent_temporary>
   </component>
@@ -69,41 +97,71 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578288754559">
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578462340076">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="422" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578288754559" />
-    <state width="1872" height="344" key="GridCell.Tab.0.bottom" timestamp="1578287939561">
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578462340076" />
+    <state width="1872" height="279" key="GridCell.Tab.0.bottom" timestamp="1578462316294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939561" />
-    <state width="1872" height="344" key="GridCell.Tab.0.center" timestamp="1578287939560">
+    <state width="1872" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578462316294" />
+    <state width="1872" height="279" key="GridCell.Tab.0.center" timestamp="1578462316292">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939560" />
-    <state width="1872" height="344" key="GridCell.Tab.0.left" timestamp="1578287939560">
+    <state width="1872" height="279" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578462316292" />
+    <state width="1872" height="279" key="GridCell.Tab.0.left" timestamp="1578462316291">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939560" />
-    <state width="1872" height="344" key="GridCell.Tab.0.right" timestamp="1578287939561">
+    <state width="1872" height="279" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578462316291" />
+    <state width="1872" height="279" key="GridCell.Tab.0.right" timestamp="1578462316292">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939561" />
-    <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1578287939567">
+    <state width="1872" height="279" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578462316292" />
+    <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1578461898402">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939567" />
-    <state width="1872" height="344" key="GridCell.Tab.1.center" timestamp="1578287939566">
+    <state width="1872" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578461898402" />
+    <state width="1872" height="344" key="GridCell.Tab.1.center" timestamp="1578461898402">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939566" />
-    <state width="1872" height="344" key="GridCell.Tab.1.left" timestamp="1578287939565">
+    <state width="1872" height="344" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578461898402" />
+    <state width="1872" height="344" key="GridCell.Tab.1.left" timestamp="1578461898402">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939565" />
-    <state width="1872" height="344" key="GridCell.Tab.1.right" timestamp="1578287939567">
+    <state width="1872" height="344" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578461898402" />
+    <state width="1872" height="344" key="GridCell.Tab.1.right" timestamp="1578461898402">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578287939567" />
+    <state width="1872" height="344" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578461898402" />
+    <state x="446" y="105" key="SettingsEditor" timestamp="1578460741398">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="446" y="105" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578460741398" />
+    <state x="594" y="423" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578461266290">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="594" y="423" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1578461266290" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="!isTakingOff" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/com/company/Runway.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="list[leastFuel]" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
