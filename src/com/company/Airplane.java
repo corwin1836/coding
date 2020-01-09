@@ -1,6 +1,6 @@
 package com.company;
 
-public class Airplane {
+public class Airplane implements Tickable{
 
     private static int planeDesignation = 0;
     private int designation;
@@ -8,22 +8,23 @@ public class Airplane {
     public double fuel;
     private int landingTime;
     private int takeOffTime;
+    NumberGenerator generator;
 
-    public Airplane() {
+    public Airplane(NumberGenerator generator) {
         planeDesignation++;
         designation = planeDesignation;
         fuel = Math.random() * 100;
-
+        this.generator = generator;
     }
 
     public void takeOff() {
-        takeOffTime = (int) (Math.random() * 10 + 5);
+        takeOffTime = generator.range(5, 15);
         off = false;
 
     }
 
     public void landing() {
-        landingTime = (int) (Math.random() * 10 + 5);
+        landingTime = generator.range(5,15);
         off = true;
     }
 

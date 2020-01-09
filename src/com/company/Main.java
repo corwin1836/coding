@@ -7,9 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
         Timer timer = new Timer();
+        RandomNumberGenerator gen = new RandomNumberGenerator();
         Airplane[] list = new Airplane[100];
         for (int i = 0; i < list.length; i++) {
-            Airplane x = new Airplane();
+            Airplane x = new Airplane(gen);
             list[i] = x;
         }
 
@@ -24,7 +25,7 @@ public class Main {
                 if (!runways[i].inUse()) {
                     if (tickCounter % 2 == 0) {
                         runways[i].takeOffPlane(list[0]);
-                        list[0] = new Airplane();
+                        list[0] = new Airplane(gen);
                     } else {
                         int leastFuel = 0;
                         for (int j = 0; j < list.length; j++) {
@@ -33,7 +34,7 @@ public class Main {
                             }
                         }
                         runways[i].landPlane(list[leastFuel]);
-                        list[leastFuel] = new Airplane();
+                        list[leastFuel] = new Airplane(gen);
                     }
                 }
                 runways[i].tick();

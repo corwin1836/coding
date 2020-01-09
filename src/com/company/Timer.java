@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Timer {
+public class Timer implements Tickable {
     Date startTime;
     int ticksElapsed;
     public Timer(){
