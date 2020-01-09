@@ -1,7 +1,6 @@
 import com.company.Airplane;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 
 public class TestAirplane {
     @Test
@@ -12,8 +11,29 @@ public class TestAirplane {
     }
 
     //MethodName_StateUnderTest_ExpectedBehavior//
-    //hasTakenOff_returnsFalse_Immediately
-    //hasLanded_returnsTrue_15ticks
-    //hasTakenoff_returnsTrue_15ticks
-    //
+    @Test
+    public void hasTakenOff_immediately_returnsFalse() {
+        Airplane x = new Airplane();
+        x.takeOff();
+        assertFalse(x.hasTakenOff());
+    }
+    @Test
+    public void hasLanded_15ticks_returnsTrue() {
+        Airplane x = new Airplane();
+        x.landing();
+        for (int i = 0; i < 15; i++) {
+            x.tick();
+        }
+        assertTrue(x.hasLanded());
+    }
+    @Test
+    public void hasTakenoff_15ticks_returnsTrue() {
+        Airplane x = new Airplane();
+        x.takeOff();
+        for (int i = 0; i < 15; i++) {
+           x.tick();
+        }
+        assertTrue(x.hasTakenOff());
+    }
+
 }

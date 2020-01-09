@@ -6,6 +6,7 @@ public class Main {
     private static int tickCounter = 0;
 
     public static void main(String[] args) {
+        Timer timer = new Timer();
         Airplane[] list = new Airplane[100];
         for (int i = 0; i < list.length; i++) {
             Airplane x = new Airplane();
@@ -18,6 +19,7 @@ public class Main {
         }
 
         while (goSequence(args)) {
+            timer.printCurrentTime();
             for (int i = 0; i < 3; i++) {
                 if (!runways[i].inUse()) {
                     if (tickCounter % 2 == 0) {
@@ -37,10 +39,8 @@ public class Main {
                 runways[i].tick();
             }
             tickCounter ++;
+            timer.tick();
         }
-        Date date = new Date();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        System.out.println(formatter.format(date));
     }
 
     public static boolean goSequence(String[] args) {
