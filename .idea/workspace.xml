@@ -4,10 +4,11 @@
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Hanger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestAirplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RandomNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Runway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Runway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/OneNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/OneNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/TestAirplane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -38,50 +40,117 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.TestAirplane">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.company" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRunway.inUse_afterLandingTick_returnsFalse">
+    <configuration name="TestRunway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Airport" />
-      <option name="PROGRAM_PARAMETERS" value="50" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAirplane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Airport" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAirplane" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.TestRunway" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAirplane.hasLanded_ReturnsFalse_Immediately" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRunway.inUse_afterLandingTick_returnsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Airport" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAirplane" />
-      <option name="METHOD_NAME" value="hasLanded_ReturnsFalse_Immediately" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.TestRunway" />
+      <option name="METHOD_NAME" value="inUse_afterLandingTick_returnsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunway.landPlane_inUse_returnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Airport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.TestRunway" />
+      <option name="METHOD_NAME" value="landPlane_inUse_returnsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunway.takeOffPlane_inUse_returnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Airport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.TestRunway" />
+      <option name="METHOD_NAME" value="takeOffPlane_inUse_returnsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunway.tick_nullAfter15_returnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Airport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.TestRunway" />
+      <option name="METHOD_NAME" value="tick_nullAfter15_returnsTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TestAirplane.hasLanded_ReturnsFalse_Immediately" />
-      <item itemvalue="JUnit.TestAirplane" />
+      <item itemvalue="JUnit.TestRunway" />
+      <item itemvalue="JUnit.TestRunway.takeOffPlane_inUse_returnsTrue" />
+      <item itemvalue="JUnit.TestRunway.landPlane_inUse_returnsTrue" />
+      <item itemvalue="JUnit.TestRunway.tick_nullAfter15_returnsTrue" />
+      <item itemvalue="JUnit.TestRunway.inUse_afterLandingTick_returnsFalse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestAirplane" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestAirplane.hasLanded_ReturnsFalse_Immediately" />
+        <item itemvalue="JUnit.TestRunway.inUse_afterLandingTick_returnsFalse" />
+        <item itemvalue="JUnit.TestRunway.tick_nullAfter15_returnsTrue" />
+        <item itemvalue="JUnit.TestRunway.landPlane_inUse_returnsTrue" />
+        <item itemvalue="JUnit.TestRunway.takeOffPlane_inUse_returnsTrue" />
+        <item itemvalue="JUnit.TestRunway" />
       </list>
     </recent_temporary>
   </component>
@@ -115,26 +184,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578547641245" />
-    <state x="771" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1578549592891">
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1578633213426">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="771" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578549592891" />
-    <state width="1872" height="244" key="GridCell.Tab.0.bottom" timestamp="1578550148675">
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578633213426" />
+    <state x="690" y="388" width="539" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578635221653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578550148675" />
-    <state width="1872" height="244" key="GridCell.Tab.0.center" timestamp="1578550148675">
+    <state x="690" y="388" width="539" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1578635221653" />
+    <state width="1872" height="244" key="GridCell.Tab.0.bottom" timestamp="1578638113020">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="244" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578550148675" />
-    <state width="1872" height="244" key="GridCell.Tab.0.left" timestamp="1578550148674">
+    <state width="1872" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578638113020" />
+    <state width="1872" height="244" key="GridCell.Tab.0.center" timestamp="1578638113019">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="244" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578550148674" />
-    <state width="1872" height="244" key="GridCell.Tab.0.right" timestamp="1578550148675">
+    <state width="1872" height="244" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578638113019" />
+    <state width="1872" height="244" key="GridCell.Tab.0.left" timestamp="1578638113019">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="244" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578550148675" />
+    <state width="1872" height="244" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578638113019" />
+    <state width="1872" height="244" key="GridCell.Tab.0.right" timestamp="1578638113020">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1872" height="244" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578638113020" />
     <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1578463362204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -159,6 +232,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="594" y="423" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1578461266290" />
+    <state x="682" y="233" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578636407888">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="682" y="233" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578636407888" />
+    <state x="960" y="0" width="960" height="1050" key="dock-window-1" timestamp="1578637502684">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="960" y="0" width="960" height="1050" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1578637502684" />
+    <state x="1102" y="240" key="run.anything.popup" timestamp="1578637781988">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="1102" y="240" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578637781988" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

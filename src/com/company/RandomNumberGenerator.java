@@ -1,9 +1,8 @@
 package com.company;
 
 public class RandomNumberGenerator implements NumberGenerator{
-
     @Override
-    public int range(int lower, int higher) {
-        return (int) (Math.random() * (higher - lower) +lower);
+    public double range(double lower, double higher) {
+        return Math.random() * (higher - lower) +lower;
     }
 }

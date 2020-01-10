@@ -1,5 +1,9 @@
 package com.company;
 
 public interface NumberGenerator {
-    int range(int lower, int higher);
+    default int range(int lower, int higher) {
+        return (int) range( (double) lower, (double) higher);
+    }
+
+    double range(double lower, double higher);
 }

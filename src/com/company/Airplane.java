@@ -13,7 +13,7 @@ public class Airplane implements Tickable{
     public Airplane(NumberGenerator generator) {
         planeDesignation++;
         designation = planeDesignation;
-        fuel = Math.random() * 100;
+        fuel = generator.range(0.0, 100.0);
         this.generator = generator;
     }
 

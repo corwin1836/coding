@@ -1,7 +1,7 @@
 package com.company;
 
 public class Runway {
-    public Airplane x;
+    private Airplane x;
     private boolean isTakingOff;
 
     public boolean inUse() {

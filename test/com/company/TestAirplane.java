@@ -1,4 +1,5 @@
-import com.company.Airplane;
+package com.company;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -37,4 +38,10 @@ public class TestAirplane {
         assertTrue(x.hasTakenOff());
     }
 
+    @Test
+    public void getFuel_initially_hasValue() {
+        Airplane x = new Airplane(gen);
+        double fuel = x.getFuel();
+        assertNotEquals(fuel, 0.0);
+    }
 }
