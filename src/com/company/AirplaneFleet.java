@@ -7,6 +7,8 @@ public class AirplaneFleet {
 
 
     public AirplaneFleet(int fleetSize) {
+        if (fleetSize < 1)
+            throw new IllegalStateException();
         fleet = new Airplane[fleetSize];
         for (int i = 0; i < fleet.length; i++) {
             Airplane x = new Airplane(gen);

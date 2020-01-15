@@ -30,7 +30,8 @@ public class TestRunway {
         Airplane a = new Airplane(gen);
         Runway r = new Runway();
         r.takeOffPlane(a);
-        r.tick();
+        r.tick(); // taxi plane to takeoff point
+        r.tick(); // lift off!
         assertFalse(r.inUse());
     }
 

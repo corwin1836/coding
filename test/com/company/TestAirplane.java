@@ -34,7 +34,8 @@ public class TestAirplane {
     public void hasTakenoff_15ticks_returnsTrue() {
         Airplane x = new Airplane(gen);
         x.takeOff();
-        x.tick();
+        x.tick(); //taxi tick
+        x.tick(); //takeoff tick
         assertTrue(x.hasTakenOff());
     }
 
@@ -45,3 +46,5 @@ public class TestAirplane {
         assertNotEquals(fuel, 0.0);
     }
 }
+    //@Test
+//    public

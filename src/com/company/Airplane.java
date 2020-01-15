@@ -1,14 +1,15 @@
 package com.company;
 
-public class Airplane implements Tickable{
+public class Airplane implements Tickable {
 
     private static int planeDesignation = 0;
     private int designation;
     private boolean off;
-    public double fuel;
+    private double fuel;
     private int landingTime;
     private int takeOffTime;
-    NumberGenerator generator;
+    private int taxiTime;
+    private NumberGenerator generator;
 
     public Airplane(NumberGenerator generator) {
         planeDesignation++;
@@ -18,13 +19,14 @@ public class Airplane implements Tickable{
     }
 
     public void takeOff() {
+        taxiTime = generator.range(3, 5);
         takeOffTime = generator.range(5, 15);
         off = false;
 
     }
 
     public void landing() {
-        landingTime = generator.range(5,15);
+        landingTime = generator.range(5, 15);
         off = true;
     }
 
@@ -41,6 +43,10 @@ public class Airplane implements Tickable{
     }
 
     public void tick() {
+        if (taxiTime > 0) {
+            taxiTime--;
+            return;
+        }
         if (takeOffTime > 0) {
             takeOffTime--;
             if (takeOffTime == 0) {
