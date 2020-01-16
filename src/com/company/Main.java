@@ -7,7 +7,6 @@ public class Main {
         Timer timer = new Timer();
 
         Airport laguardia = new Airport(3, 100);
-
         while (goSequence(args)) {
             timer.printCurrentTime();
             laguardia.airportControl();
