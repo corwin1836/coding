@@ -4,11 +4,11 @@ public class UniqueGenerator {
 
     public String charGenerator(String starter) throws Exception {
         String backEnd = starter.substring(4);
-        String frontEnd = starter.substring(1, 4);
+        String frontEnd = starter.substring(0, 3);
         int newlyMintedInt = Integer.parseInt(backEnd);
         if (newlyMintedInt < 999) {
             newlyMintedInt++;
-            return frontEnd + newlyMintedInt;
+            return frontEnd + '-' + newlyMintedInt;
         } else {
             backEnd = "111";
             char firstChar = frontEnd.charAt(0);
@@ -29,7 +29,7 @@ public class UniqueGenerator {
             } else {
                 thirdChar += 1;
             }
-            return firstChar + secondChar + thirdChar +'-'+ backEnd;
+            return "" + firstChar + secondChar + thirdChar +'-'+ backEnd;
         }
     }
 }

@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-
 public class Airplane implements Tickable {
 
     private static int planeDesignation = 0;
@@ -16,11 +14,11 @@ public class Airplane implements Tickable {
     UniqueGenerator unique = new UniqueGenerator();
     private static String lastIdentifier = "AAA-111";
 
-
-
     public Airplane(NumberGenerator generator) {
         planeDesignation++;
         designation = planeDesignation;
+        AirplaneMake make = AirplaneMake.makeGenerator();
+        AirplaneModel model = AirplaneModel.modelGenerator(make);
         fuel = generator.range(0.0, 100.0);
         try {
             identifier = unique.charGenerator(lastIdentifier);
