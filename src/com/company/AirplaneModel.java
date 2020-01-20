@@ -13,6 +13,8 @@ public enum AirplaneModel {
     private int passengers;
 
 
+
+
     AirplaneModel(int fuel, int passengers) {
         this.fuel = fuel;
         this.passengers = passengers;
@@ -45,6 +47,25 @@ public enum AirplaneModel {
 
     public int getFuel() {
         return fuel;
+    }
+
+    public String toString() {
+        switch (this) {
+            case A320:
+                return "320";
+            case A5000:
+                return "5000";
+            case z416:
+                return "z416";
+            case A9k:
+                return "9k";
+            case Halló:
+                return "Halló";
+            case Ostur:
+                return "Ostur";
+            default:
+                throw new IllegalStateException("Invalid model given to toString.");
+        }
     }
 
     public int getPassengers() {

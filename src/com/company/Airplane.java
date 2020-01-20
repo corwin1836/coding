@@ -13,19 +13,17 @@ public class Airplane implements Tickable {
     private String identifier;
     UniqueGenerator unique = new UniqueGenerator();
     private static String lastIdentifier = "AAA-111";
+    private AirplaneModel model;
+    private AirplaneMake make;
 
     public Airplane(NumberGenerator generator) {
         planeDesignation++;
         designation = planeDesignation;
         AirplaneMake make = AirplaneMake.makeGenerator();
         AirplaneModel model = AirplaneModel.modelGenerator(make);
-        fuel = generator.range(0.0, 100.0);
-        try {
-            identifier = unique.charGenerator(lastIdentifier);
-        } catch (Exception blargh) {
-            blargh.printStackTrace();
-        }
-        lastIdentifier = identifier;
+        this.model = model;
+        this.make = make;
+        fuel = generator.range(0.0, model.getFuel());
         this.generator = generator;
     }
 
@@ -39,12 +37,24 @@ public class Airplane implements Tickable {
         taxiTime = generator.range(3, 5);
         takeOffTime = generator.range(5, 15);
         off = false;
+        try {
+            identifier = unique.charGenerator(lastIdentifier);
+        } catch (Exception blargh) {
+            blargh.printStackTrace();
+        }
+        lastIdentifier = identifier;
 
     }
 
     public void landing() {
         landingTime = generator.range(5, 15);
         off = true;
+        try {
+            identifier = unique.charGenerator(lastIdentifier);
+        } catch (Exception blargh) {
+            blargh.printStackTrace();
+        }
+        lastIdentifier = identifier;
     }
 
     public double getFuel() {
@@ -68,14 +78,14 @@ public class Airplane implements Tickable {
             takeOffTime--;
             if (takeOffTime == 0) {
                 off = true;
-                System.out.println(designation +" "+ identifier +" "+ "Has taken off!");
+                System.out.println(designation +" "+ identifier + " " + make + " " + model +" "+ "Has taken off!");
             }
         }
         if (landingTime > 0) {
             landingTime--;
             if (landingTime == 0) {
                 off = false;
-                System.out.println(designation +" "+ identifier +" "+ "Has landed! YAY!");
+                System.out.println(designation +" "+ identifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
             }
         }
     }
