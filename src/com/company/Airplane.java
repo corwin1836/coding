@@ -7,35 +7,37 @@ public class Airplane implements Tickable {
     private boolean off;
     private double fuel;
     private int landingTime;
-    private int takeOffTime;
+    private int takeoffTime;
     private int taxiTime;
     private NumberGenerator generator;
     private String identifier;
-    UniqueGenerator unique = new UniqueGenerator();
+    private UniqueGenerator unique = new UniqueGenerator();
     private static String lastIdentifier = "AAA-111";
     private AirplaneModel model;
     private AirplaneMake make;
+    private int refuelingTime;
+    private RefuelDelegate refueled;
 
-    public Airplane(NumberGenerator generator) {
+
+    public Airplane(NumberGenerator generator, boolean fullFuel, RefuelDelegate refueled) {
         planeDesignation++;
         designation = planeDesignation;
         AirplaneMake make = AirplaneMake.makeGenerator();
         AirplaneModel model = AirplaneModel.modelGenerator(make);
         this.model = model;
         this.make = make;
-        fuel = generator.range(0.0, model.getFuel());
         this.generator = generator;
+        this.refueled = refueled;
+        if (fullFuel) {
+            fuel = model.getFuel();
+        } else {
+            fuel = generator.range(0.0, model.getFuel());
+        }
     }
-
-//    Each flight has a unique identifier.
-//    The identifiers should be in the format XXX-YYY, where X is a capital letter and Y is a decimal integer.
-//    This is not the ID of a plane, this is the ID of the flight that the plane is embarking on.
-
-
 
     public void takeOff() {
         taxiTime = generator.range(3, 5);
-        takeOffTime = generator.range(5, 15);
+        takeoffTime = generator.range(5, 15);
         off = false;
         try {
             identifier = unique.charGenerator(lastIdentifier);
@@ -48,6 +50,7 @@ public class Airplane implements Tickable {
 
     public void landing() {
         landingTime = generator.range(5, 15);
+        refuelingTime = generator.range(3,5);
         off = true;
         try {
             identifier = unique.charGenerator(lastIdentifier);
@@ -74,9 +77,9 @@ public class Airplane implements Tickable {
             taxiTime--;
             return;
         }
-        if (takeOffTime > 0) {
-            takeOffTime--;
-            if (takeOffTime == 0) {
+        if (takeoffTime > 0) {
+            takeoffTime--;
+            if (takeoffTime == 0) {
                 off = true;
                 System.out.println(designation +" "+ identifier + " " + make + " " + model +" "+ "Has taken off!");
             }
@@ -86,6 +89,13 @@ public class Airplane implements Tickable {
             if (landingTime == 0) {
                 off = false;
                 System.out.println(designation +" "+ identifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
+            }
+        }
+        if (landingTime == 0 && refuelingTime >0) {
+            refuelingTime -= 1;
+            if (refuelingTime == 0) {
+                refueled.onRefuelCompleted(this);
+                fuel = model.getFuel();
             }
         }
     }

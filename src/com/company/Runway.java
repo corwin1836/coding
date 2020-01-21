@@ -1,36 +1,38 @@
 package com.company;
 
 public class Runway {
-    private Airplane x;
+    private Airplane currentPlane;
     private boolean isTakingOff;
 
     public boolean inUse() {
-        return x != null;
+        return currentPlane != null;
     }
 
     public void tick() {
-        if (x != null) {
-            x.tick();
-            if (isTakingOff && x.hasTakenOff()) {
-                x = null;
+        if (currentPlane != null) {
+            currentPlane.tick();
+            if (isTakingOff && currentPlane.hasTakenOff()) {
+                currentPlane = null;
             }
-            if (!isTakingOff && x.hasLanded()) {
-                x = null;
+            if (!isTakingOff && currentPlane.hasLanded()) {
+                currentPlane = null;
             }
         }
     }
 
     public void landPlane(Airplane x) {
-        this.x = x;
+        this.currentPlane = x;
         x.landing();
         isTakingOff = false;
     }
 
     public void takeOffPlane(Airplane x) {
-        this.x = x;
+        this.currentPlane = x;
         x.takeOff();
         isTakingOff = true;
     }
+
+
 }
 
 

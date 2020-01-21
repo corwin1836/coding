@@ -4,22 +4,17 @@ public class AirplaneFleet {
 
     private RandomNumberGenerator gen = new RandomNumberGenerator();
     private Airplane[] fleet;
+    private RefuelDelegate delegate;
 
-
-    public AirplaneFleet(int fleetSize) {
+    public AirplaneFleet(int fleetSize, RefuelDelegate delegate) {
         if (fleetSize < 1)
             throw new IllegalStateException();
         fleet = new Airplane[fleetSize];
+        this.delegate = delegate;
         for (int i = 0; i < fleet.length; i++) {
-            Airplane x = new Airplane(gen);
+            Airplane x = new Airplane(gen, false, delegate);
             fleet[i] = x;
         }
-    }
-
-    public Airplane setFleetPosition() {
-        Airplane ret = fleet[0];
-        fleet[0] = new Airplane(gen);
-        return ret;
     }
 
     public Airplane removeLeastFuel() {
@@ -31,7 +26,7 @@ public class AirplaneFleet {
                 minFuel = fleet[leastFuel];
             }
         }
-        fleet[leastFuel] = new Airplane(gen);
+        fleet[leastFuel] = new Airplane(gen, false, delegate);
         return minFuel;
     }
 }

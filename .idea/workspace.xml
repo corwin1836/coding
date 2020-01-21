@@ -4,7 +4,12 @@
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AirplaneFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AirplaneFleet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/AirplaneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AirplaneModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Runway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Runway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/AirplaneFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/AirplaneFleetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/TestAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/company/TestAirplane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +19,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -145,10 +150,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Airport" />
         <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAA111" />
         <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAZ" />
         <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_When999" />
-        <item itemvalue="JUnit.All in Airport" />
         <item itemvalue="JUnit.TestRunway.inUse_afterTakeOffTick_returnsFalse" />
       </list>
     </recent_temporary>
@@ -199,22 +204,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="920" y="297" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1579235949177" />
-    <state width="1872" height="213" key="GridCell.Tab.0.bottom" timestamp="1579498837541">
+    <state width="1872" height="213" key="GridCell.Tab.0.bottom" timestamp="1579586766885">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579498837541" />
-    <state width="1872" height="213" key="GridCell.Tab.0.center" timestamp="1579498837541">
+    <state width="1872" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579586766885" />
+    <state width="1872" height="213" key="GridCell.Tab.0.center" timestamp="1579586766879">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="213" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579498837541" />
-    <state width="1872" height="213" key="GridCell.Tab.0.left" timestamp="1579498837541">
+    <state width="1872" height="213" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579586766879" />
+    <state width="1872" height="213" key="GridCell.Tab.0.left" timestamp="1579586766878">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="213" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579498837540" />
-    <state width="1872" height="213" key="GridCell.Tab.0.right" timestamp="1579498837541">
+    <state width="1872" height="213" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579586766878" />
+    <state width="1872" height="213" key="GridCell.Tab.0.right" timestamp="1579586766879">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="213" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579498837541" />
+    <state width="1872" height="213" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579586766879" />
     <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1579242029293">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
