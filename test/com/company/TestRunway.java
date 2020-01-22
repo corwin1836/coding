@@ -7,11 +7,13 @@ import org.junit.internal.runners.statements.RunAfters;
 import static org.junit.Assert.*;
 
 public class TestRunway {
-    OneNumberGenerator gen = new OneNumberGenerator();
+    private OneNumberGenerator gen = new OneNumberGenerator();
+    private RefuelDelegate delegate = new TestRefuelDelegate();
+    private boolean fuel;
 
     @Test
     public void landPlane_inUse_returnsTrue() {
-        Airplane a = new Airplane(gen);
+        Airplane a = new Airplane(gen, fuel, delegate);
         Runway r = new Runway();
         r.landPlane(a);
         assertTrue(r.inUse());
@@ -19,7 +21,7 @@ public class TestRunway {
 
     @Test
     public void takeOffPlane_inUse_returnsTrue() {
-        Airplane a = new Airplane(gen);
+        Airplane a = new Airplane(gen, fuel, delegate);
         Runway r = new Runway();
         r.takeOffPlane(a);
         assertTrue(r.inUse());
@@ -27,7 +29,7 @@ public class TestRunway {
 
     @Test
     public void inUse_afterTakeOffTick_returnsFalse() {
-        Airplane a = new Airplane(gen);
+        Airplane a = new Airplane(gen, fuel, delegate);
         Runway r = new Runway();
         r.takeOffPlane(a);
         r.tick(); // taxi plane to takeoff point
@@ -37,7 +39,7 @@ public class TestRunway {
 
     @Test
     public void inUse_afterLandingTick_returnsFalse() {
-        Airplane a = new Airplane(gen);
+        Airplane a = new Airplane(gen, fuel, delegate);
         Runway r = new Runway();
         r.landPlane(a);
         r.tick();
