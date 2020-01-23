@@ -72,6 +72,14 @@ public class Airplane implements Tickable {
         return !off;
     }
 
+    public AirplaneMake getPlaneMake() {
+        return make;
+    }
+
+    public AirplaneModel getPlaneModel() {
+        return model;
+    }
+
     public void tick() {
         if (taxiTime > 0) {
             taxiTime--;

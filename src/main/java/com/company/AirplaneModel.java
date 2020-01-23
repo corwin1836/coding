@@ -12,9 +12,6 @@ public enum AirplaneModel {
     private int fuel;
     private int passengers;
 
-
-
-
     AirplaneModel(int fuel, int passengers) {
         this.fuel = fuel;
         this.passengers = passengers;
