@@ -2,13 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Airport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Airport.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Airplane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AirplaneFleet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AirplaneMake.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AirplaneModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AirplaneTakeoffFleet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Airport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/NumberGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RandomNumberGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RefuelDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Runway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Tickable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Timer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/UniqueGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/AirplaneFleetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/OneNumberGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/TestAirplane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/TestRefuelDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/TestRunway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/UniqueGeneratorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,35 +93,39 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AirportMain">
+  <component name="RunManager" selected="Gradle.Tests in 'com.company'">
     <configuration name="AirportMain" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Airport" />
-      <option name="PROGRAM_PARAMETERS" value="u" />
+      <option name="PROGRAM_PARAMETERS" value="p" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Tests in 'com.company'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.company.*&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="All in Airport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Airport" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunway.inUse_afterTakeOffTick_returnsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Airport" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.RefuelDelegate" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.TestRunway" />
-      <option name="METHOD_NAME" value="inUse_afterTakeOffTick_returnsFalse" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,18 +181,18 @@
     <list>
       <item itemvalue="Application.AirportMain" />
       <item itemvalue="JUnit.All in Airport" />
-      <item itemvalue="JUnit.TestRunway.inUse_afterTakeOffTick_returnsFalse" />
       <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_When999" />
-      <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAZ" />
       <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAA111" />
+      <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAZ" />
+      <item itemvalue="Gradle.Tests in 'com.company'" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'com.company'" />
         <item itemvalue="JUnit.All in Airport" />
         <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAA111" />
         <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_whenAAZ" />
         <item itemvalue="JUnit.UniqueGeneratorTest.charGenerator_returnsNextIteration_When999" />
-        <item itemvalue="JUnit.TestRunway.inUse_afterTakeOffTick_returnsFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -178,10 +222,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579671612616">
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579672997738">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579671612616" />
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579672997738" />
     <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1578633213426">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -198,42 +242,42 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="920" y="297" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1579235949177" />
-    <state width="1872" height="280" key="GridCell.Tab.0.bottom" timestamp="1579671483027">
+    <state width="1872" height="344" key="GridCell.Tab.0.bottom" timestamp="1579672278973">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579671483027" />
-    <state width="1872" height="280" key="GridCell.Tab.0.center" timestamp="1579671483026">
+    <state width="1872" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579672278973" />
+    <state width="1872" height="344" key="GridCell.Tab.0.center" timestamp="1579672278972">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579671483026" />
-    <state width="1872" height="280" key="GridCell.Tab.0.left" timestamp="1579671483026">
+    <state width="1872" height="344" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579672278972" />
+    <state width="1872" height="344" key="GridCell.Tab.0.left" timestamp="1579672278953">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579671483026" />
-    <state width="1872" height="280" key="GridCell.Tab.0.right" timestamp="1579671483027">
+    <state width="1872" height="344" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579672278953" />
+    <state width="1872" height="344" key="GridCell.Tab.0.right" timestamp="1579672278973">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579671483027" />
-    <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1579669289179">
+    <state width="1872" height="344" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579672278973" />
+    <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1579672280004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579669289179" />
-    <state width="1872" height="344" key="GridCell.Tab.1.center" timestamp="1579669289179">
+    <state width="1872" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1579672280004" />
+    <state width="1872" height="344" key="GridCell.Tab.1.center" timestamp="1579672280003">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579669289179" />
-    <state width="1872" height="344" key="GridCell.Tab.1.left" timestamp="1579669289179">
+    <state width="1872" height="344" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1579672280003" />
+    <state width="1872" height="344" key="GridCell.Tab.1.left" timestamp="1579672280002">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579669289179" />
-    <state width="1872" height="344" key="GridCell.Tab.1.right" timestamp="1579669289179">
+    <state width="1872" height="344" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1579672280002" />
+    <state width="1872" height="344" key="GridCell.Tab.1.right" timestamp="1579672280003">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="344" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579669289179" />
-    <state x="446" y="105" key="SettingsEditor" timestamp="1578460741398">
+    <state width="1872" height="344" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579672280003" />
+    <state x="446" y="105" width="1028" height="844" key="SettingsEditor" timestamp="1579754010732">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="446" y="105" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578460741398" />
+    <state x="446" y="105" width="1028" height="844" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1579754010732" />
     <state x="594" y="423" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578461266290">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -21,7 +21,7 @@ public class AirplaneFleet {
         Airplane minFuel = null;
         int leastFuel = 0;
         for (int j = 0; j < fleet.length; j++) {
-            if (fleet[j].getFuel() < fleet[leastFuel].getFuel()) {
+            if (fleet[j].getFuel() <= fleet[leastFuel].getFuel()) {
                 leastFuel = j;
                 minFuel = fleet[leastFuel];
             }
