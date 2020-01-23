@@ -1,8 +1,6 @@
 package com.company;
 
-import com.sun.tools.attach.AgentInitializationException;
 import org.junit.Test;
-import org.junit.internal.runners.statements.RunAfters;
 
 import static org.junit.Assert.*;
 
