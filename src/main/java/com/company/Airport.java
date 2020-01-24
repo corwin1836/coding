@@ -22,12 +22,12 @@ public class Airport implements RefuelDelegate {
         for (int i = 0; i < 3; i++) {
             if (!runways[i].inUse()) {
                 if (tickCounter % 2 == 0) {
-                   if (takeoffList.canTakeoffFleet()) {
-                       Airplane nextOff = takeoffList.getNextTakeoff();
-                       runways[i].takeOffPlane(nextOff);
-                   } else {
-                       System.out.println("Waiting for planes to take off.");
-                   }
+                    final int x = i;
+                    takeoffList.firstToTakeoff().map((nextOff)->{
+                        runways[x].takeOffPlane(nextOff);
+                        return null;
+                    });
+
                 } else {
                     Airplane leastFuel = landingList.removeLeastFuel();
                     runways[i].landPlane(leastFuel);

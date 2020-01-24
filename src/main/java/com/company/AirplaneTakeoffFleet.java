@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class AirplaneTakeoffFleet {
 
@@ -16,38 +17,34 @@ public class AirplaneTakeoffFleet {
         }
     }
 
-    public Airplane firstToTakeoff() {
-        Airplane currentHighestPriority = fleet.get(0);
-        for (int i = 0; i < fleet.size(); i += 1) {
-            AirplaneMake current = currentHighestPriority.getPlaneMake();
-            int x = current.priorityMake(currentHighestPriority);
-            AirplaneModel currentModel = currentHighestPriority.getPlaneModel();
+    public Optional<Airplane> firstToTakeoff() {
+        Optional<Airplane> currentHighestPriority = Optional.empty();
+        for (Airplane airplane : fleet) {
+            if (currentHighestPriority.isEmpty()) {
+                currentHighestPriority = Optional.of(airplane);
+                continue;
+            }
+            AirplaneMake current = currentHighestPriority.get().getPlaneMake();
+            int x = current.priorityMake();
+            AirplaneModel currentModel = currentHighestPriority.get().getPlaneModel();
             int a = currentModel.getPassengers();
-            Airplane nextHighestPriority = fleet.get(i);
-            AirplaneMake next = nextHighestPriority.getPlaneMake();
-            int y = next.priorityMake(nextHighestPriority);
-            AirplaneModel nextModel = nextHighestPriority.getPlaneModel();
+            AirplaneMake next = airplane.getPlaneMake();
+            int y = next.priorityMake();
+            AirplaneModel nextModel = airplane.getPlaneModel();
             int b = nextModel.getPassengers();
             if (x < y) {
-                currentHighestPriority = nextHighestPriority;
-            } else
-
+                currentHighestPriority = Optional.of(airplane);
+            } else {
+                if (a < b && x == y) {
+                    currentHighestPriority = Optional.of(airplane);
+                }
             }
-
-
-
-
         }
-
+        return currentHighestPriority;
     }
 
     public boolean canTakeoffFleet() {
         return !fleet.isEmpty();
-    }
-
-    public Airplane getNextTakeoff() {
-        Airplane ret =fleet.get(0);
-        return ret;
     }
 
     public void addAirplane(Airplane newAirplane) {

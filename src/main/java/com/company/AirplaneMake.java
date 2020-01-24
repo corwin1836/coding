@@ -20,17 +20,14 @@ public enum AirplaneMake {
         }
     }
 
-    public int priorityMake(Airplane x) {
-        if (x.getPlaneMake() == AirplaneMake.Noedel) {
-            return 3;
-        }
-        if (x.getPlaneMake() == AirplaneMake.Martin) {
-            return 2;
-        }
-        if (x.getPlaneMake() == AirplaneMake.Bárðarbunga) {
-            return 2;
-        } else {
-            return 1;
+    public int priorityMake() {
+        switch (this) {
+            case Noedel:
+                return 3;
+            case Trebek:
+                return 1;
+            default:
+                return 2;
         }
     }
 }
