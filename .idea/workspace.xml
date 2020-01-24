@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneMake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneMake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneTakeoffFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneTakeoffFleet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AirplaneFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AirplaneLandingFleetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'com.company'">
+  <component name="RunManager" selected="Application.AirportMain">
     <configuration name="AirportMain" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Airport" />
@@ -233,22 +233,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579672997738">
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579844683673">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579672997738" />
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579844683673" />
     <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1578633213426">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578633213426" />
-    <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579066080961">
+    <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579844682442">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579066080961" />
+    <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579844682442" />
     <state x="690" y="388" width="539" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578635221653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="388" width="539" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1578635221653" />
+    <state x="569" y="0" width="776" height="1049" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579842244193">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="569" y="0" width="776" height="1049" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579842244193" />
     <state x="920" y="297" key="#xdebugger.evaluate" timestamp="1579235949177">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

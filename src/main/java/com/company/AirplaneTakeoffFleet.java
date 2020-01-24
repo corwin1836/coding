@@ -34,10 +34,8 @@ public class AirplaneTakeoffFleet {
             int b = nextModel.getPassengers();
             if (x < y) {
                 currentHighestPriority = Optional.of(airplane);
-            } else {
-                if (a < b && x == y) {
-                    currentHighestPriority = Optional.of(airplane);
-                }
+            } else if (a < b && x == y) {
+                currentHighestPriority = Optional.of(airplane);
             }
         }
         return currentHighestPriority;

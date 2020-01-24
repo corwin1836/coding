@@ -3,7 +3,7 @@ package com.company;
 public class Airport implements RefuelDelegate {
 
     private Runway[] runways;
-    private AirplaneFleet landingList;
+    private AirplaneLandingFleet landingList;
     private int tickCounter = 0;
     private AirplaneTakeoffFleet takeoffList;
 
@@ -14,7 +14,7 @@ public class Airport implements RefuelDelegate {
             Runway x = new Runway();
             runways[i] = x;
         }
-        landingList = new AirplaneFleet(fleetSize, this);
+        landingList = new AirplaneLandingFleet(fleetSize, this);
         takeoffList = new AirplaneTakeoffFleet(this);
     }
 
@@ -29,7 +29,7 @@ public class Airport implements RefuelDelegate {
                     });
 
                 } else {
-                    Airplane leastFuel = landingList.removeLeastFuel();
+                    Airplane leastFuel = landingList.nextToLand();
                     runways[i].landPlane(leastFuel);
                 }
             }
