@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VpCEx7cja2zIfqBrU14k2D877a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -253,6 +257,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="920" y="297" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1579235949177" />
+    <state x="190" y="93" key="DiffContextDialog" timestamp="1580106588435">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="190" y="93" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580106588435" />
     <state width="1872" height="208" key="GridCell.Tab.0.bottom" timestamp="1579760553210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -285,6 +293,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1872" height="344" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1579672280003" />
+    <state x="0" y="0" width="1920" height="1050" key="RollbackChangesDialog" timestamp="1580106895997">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="0" width="1920" height="1050" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580106895997" />
     <state x="446" y="105" width="1028" height="844" key="SettingsEditor" timestamp="1579754010732">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
