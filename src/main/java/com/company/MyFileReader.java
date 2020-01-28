@@ -6,9 +6,9 @@ import java.io.IOException;
 
 public class MyFileReader {
 
-    public String reader() throws IOException {
+    public String reader(String filePath) throws IOException {
 
-        BufferedReader br = new BufferedReader(new FileReader("~/Documents/coding/inputs/planes.json"));
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
         StringBuilder allLines = new StringBuilder();
         String currentLine = br.readLine();
 

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MyFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MyFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/TrafficControl/Airline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/TrafficControl/Make.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/Make.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/TrafficControl/TrafficControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1579844683673" />
-    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1578633213426">
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1580188425118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578633213426" />
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1580188425118" />
     <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579844682442">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
