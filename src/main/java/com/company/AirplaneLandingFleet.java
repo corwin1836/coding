@@ -13,7 +13,7 @@ public class AirplaneLandingFleet {
         fleet = new Airplane[fleetSize];
         this.delegate = delegate;
         for (int i = 0; i < fleet.length; i++) {
-            Airplane x = new Airplane(gen, false, delegate);
+            Airplane x = new Airplane(gen, delegate);
             fleet[i] = x;
         }
         priority = new LandingPriorityCalculator();
