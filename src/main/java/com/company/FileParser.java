@@ -34,7 +34,7 @@ public class FileParser{
     }
 
     public Airplane[] buildOutgoing (NumberGenerator generator, RefuelDelegate delegate) {
-        Airline[] airlines = trafficControl.getIncoming();
+        Airline[] airlines = trafficControl.getOutgoing();
         Airplane[] airplanes = new Airplane[airlines.length];
         for (int i = 0; i < airlines.length; i += 1) {
             Make make = airlines[i].getMake();

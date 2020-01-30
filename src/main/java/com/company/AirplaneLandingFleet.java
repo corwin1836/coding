@@ -7,20 +7,17 @@ public class AirplaneLandingFleet {
     private RefuelDelegate delegate;
     LandingPriorityCalculator priority;
 
-    public AirplaneLandingFleet(int fleetSize, RefuelDelegate delegate) {
-        if (fleetSize < 1)
+
+    public AirplaneLandingFleet(Airplane[] landingList) {
+        if (landingList.length < 1) {
             throw new IllegalStateException();
-        fleet = new Airplane[fleetSize];
-        this.delegate = delegate;
-        for (int i = 0; i < fleet.length; i++) {
-            Airplane x = new Airplane(gen, delegate);
-            fleet[i] = x;
         }
+        fleet = landingList;
         priority = new LandingPriorityCalculator();
     }
 
 
     public Airplane nextToLand() {
-    return priority.nextToLand(fleet, gen, delegate);
+        return priority.nextToLand(fleet, gen, delegate);
     }
 }

@@ -10,7 +10,7 @@ public class Main {
             throw new Exception("Required program parameters not met, exiting program.");
     }
         Timer timer = new Timer();
-        Airport laguardia = new Airport(3, 100);
+        Airport laguardia = new Airport(3);
         while (goSequence(args)) {
             timer.printCurrentTime();
             laguardia.airportControl();

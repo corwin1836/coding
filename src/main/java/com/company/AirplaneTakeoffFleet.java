@@ -1,20 +1,17 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Optional;
 
 public class AirplaneTakeoffFleet {
 
-    private RandomNumberGenerator gen = new RandomNumberGenerator();
     private ArrayList<Airplane> fleet;
-    private static final int FLEET_CAPACITY = 100;
 
 
-    public AirplaneTakeoffFleet(RefuelDelegate refuelDelegate) {
-        fleet = new ArrayList<>(FLEET_CAPACITY);
-        for (int i = 0; i < FLEET_CAPACITY; i++) {
-            fleet.add(new Airplane(gen, true, refuelDelegate));
-        }
+    public AirplaneTakeoffFleet(Airplane[] takeoffList) {
+        fleet = new ArrayList<>(takeoffList.length);
+        Collections.addAll(fleet, takeoffList);
     }
 
     public Optional<Airplane> firstToTakeoff() {
@@ -39,10 +36,6 @@ public class AirplaneTakeoffFleet {
             }
         }
         return currentHighestPriority;
-    }
-
-    public boolean canTakeoffFleet() {
-        return !fleet.isEmpty();
     }
 
     public void addAirplane(Airplane newAirplane) {

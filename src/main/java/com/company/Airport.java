@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.IOException;
+
 public class Airport implements RefuelDelegate {
 
     private Runway[] runways;
@@ -7,15 +9,19 @@ public class Airport implements RefuelDelegate {
     private int tickCounter = 0;
     private AirplaneTakeoffFleet takeoffList;
 
-
-    public Airport(int runwayNumber, int fleetSize) {
+    public Airport(int runwayNumber) throws IOException {
+        NumberGenerator gen = new RandomNumberGenerator();
+        MyFileReader reader = new MyFileReader();
+        FileParser parser = new FileParser(reader);
+        Airplane[] outgoing = parser.buildOutgoing(gen, this);
+        Airplane[] incoming = parser.buildIncoming(gen, this);
         runways = new Runway[runwayNumber];
         for (int i = 0; i < runways.length; i++) {
             Runway x = new Runway();
             runways[i] = x;
         }
-        landingList = new AirplaneLandingFleet(fleetSize, this);
-        takeoffList = new AirplaneTakeoffFleet(this);
+        landingList = new AirplaneLandingFleet(incoming);
+        takeoffList = new AirplaneTakeoffFleet(outgoing);
     }
 
     public void airportControl() {
@@ -40,5 +46,13 @@ public class Airport implements RefuelDelegate {
 
     public void onRefuelCompleted(Airplane refuelComplete) {
         takeoffList.addAirplane(refuelComplete);
+    }
+
+    public AirplaneTakeoffFleet getTakeoffList() {
+        return takeoffList;
+    }
+
+    public AirplaneLandingFleet getLandingList() {
+        return landingList;
     }
 }
