@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneMake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneMake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneTakeoffFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneTakeoffFleet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/Make.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/Make.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,10 +323,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1102" y="240" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579062310056" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1579670134843">
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1580448206033">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1579670134843" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1580448206033" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

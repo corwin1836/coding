@@ -104,4 +104,8 @@ public class Airplane implements Tickable {
             }
         }
     }
+
+    public String getUniqueIdentifier() {
+        return uniqueIdentifier;
+    }
 }

@@ -41,4 +41,8 @@ public class AirplaneTakeoffFleet {
     public void addAirplane(Airplane newAirplane) {
         fleet.add(newAirplane);
     }
+
+    public ArrayList<Airplane> getFleet() {
+        return fleet;
+    }
 }

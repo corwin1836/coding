@@ -20,4 +20,8 @@ public class AirplaneLandingFleet {
     public Airplane nextToLand() {
         return priority.nextToLand(fleet, gen, delegate);
     }
+
+    public Airplane[] getFleet() {
+        return fleet;
+    }
 }

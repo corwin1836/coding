@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.models.Make;
+
 public enum AirplaneMake {
     Noedel, Trebek, Martin, Bárðarbunga;
 
