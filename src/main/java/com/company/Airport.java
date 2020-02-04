@@ -24,7 +24,7 @@ public class Airport implements RefuelDelegate {
         takeoffList = new AirplaneTakeoffFleet(outgoing);
     }
 
-    public void airportControl() {
+    public void airportControl() throws Exception {
         for (int i = 0; i < 3; i++) {
             if (!runways[i].inUse()) {
                 if (tickCounter % 2 == 0) {

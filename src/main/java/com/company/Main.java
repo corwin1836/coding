@@ -1,22 +1,47 @@
 package com.company;
 
+import java.io.IOException;
+
 import static java.lang.Thread.sleep;
 
 public class Main {
     private static int tickCounter = 0;
 
-    public static void main(String[] args) throws InterruptedException, Exception {
+    public static void main(String[] args) {
         if (args.length == 0) {
-            throw new Exception("Required program parameters not met, exiting program.");
+            //throw new Exception("Required program parameters not met, exiting program.");
     }
         Timer timer = new Timer();
-        Airport laguardia = new Airport(3);
+        Airport laguardia = null;
+        try {
+            laguardia = new Airport(3);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         while (goSequence(args)) {
             timer.printCurrentTime();
-            laguardia.airportControl();
+            try {
+                laguardia.airportControl();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             tickCounter++;
             timer.tick();
-            sleep(programRunTime(args));
+            try {
+                sleep(programRunTime(args));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        if (args.length != 3) {
+            //throw new Exception("You have not provided a output file while still providing a tick count.");
+        }
+        Writer writer = new MyFileWriter();
+        AirportSerializer airportSerializer = new AirportSerializer();
+        try {
+            airportSerializer.serializer(writer, args[2], laguardia);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

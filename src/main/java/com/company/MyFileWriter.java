@@ -8,5 +8,6 @@ public class MyFileWriter implements Writer{
         FileWriter x = new FileWriter(filepath);
         BufferedWriter bufferedWriter = new BufferedWriter(x);
         bufferedWriter.write(output);
+        bufferedWriter.close();
     }
 }

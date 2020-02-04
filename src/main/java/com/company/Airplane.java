@@ -58,7 +58,17 @@ public class Airplane implements Tickable {
             throw new IllegalArgumentException();
         }
         this.fuel = fuel;
+    }
 
+    public void setMaxFuel() {
+        double fuel = getPlaneModel().getFuel();
+        setFuel(fuel);
+    }
+
+    public void setRandFuel() {
+        double maxFuel = getPlaneModel().getFuel();
+        double fuel = generator.range(0, maxFuel);
+        setFuel(fuel);
     }
 
     public boolean hasTakenOff() {
@@ -100,7 +110,7 @@ public class Airplane implements Tickable {
             refuelingTime -= 1;
             if (refuelingTime == 0) {
                 refueled.onRefuelCompleted(this);
-                fuel = model.getFuel();
+                setMaxFuel();
             }
         }
     }

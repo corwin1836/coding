@@ -9,10 +9,10 @@ import java.io.IOException;
 
 public class FileParser{
     private TrafficControl trafficControl;
-
+    private NumberGenerator gen = new RandomNumberGenerator();
     public FileParser(MyFileReader quickReader) throws IOException {
         Gson gson = new Gson();
-        trafficControl = gson.fromJson(quickReader.reader("~/Documents/coding/inputs/planes.json"), TrafficControl.class);
+        trafficControl = gson.fromJson(quickReader.reader("/home/ian/Documents/coding/inputs/planes.json"), TrafficControl.class);
     }
 
     public Airplane[] buildIncoming(NumberGenerator generator, RefuelDelegate delegate) {
@@ -27,8 +27,9 @@ public class FileParser{
                     generator,
                     delegate,
                     AirplaneMake.valueOf(makeString),
-                    AirplaneModel.valueOf(modelString),
+                    AirplaneModel.returnProperModel(modelString),
                     route);
+            airplanes[i].setRandFuel();
         }
         return airplanes;
     }
@@ -45,8 +46,9 @@ public class FileParser{
                     generator,
                     delegate,
                     AirplaneMake.valueOf(makeString),
-                    AirplaneModel.valueOf(modelString),
+                    AirplaneModel.returnProperModel(modelString),
                     route);
+            airplanes[i].setMaxFuel();
         }
         return airplanes;
     }

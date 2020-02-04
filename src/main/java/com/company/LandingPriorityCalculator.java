@@ -2,8 +2,9 @@ package com.company;
 
 public class LandingPriorityCalculator {
 
+    String uniqueHolder = "AAA-111";
 
-    public Airplane nextToLand(Airplane[] fleet, NumberGenerator gen, RefuelDelegate delegate) {
+    public Airplane nextToLand(Airplane[] fleet, NumberGenerator gen, RefuelDelegate delegate) throws Exception {
         Airplane currentHighestPriority = fleet[0];
         int lastTakeOff = 0;
         for (int i = 0; i < fleet.length; i++) {
@@ -28,7 +29,13 @@ public class LandingPriorityCalculator {
                 lastTakeOff = i;
             }
         }
-        fleet[lastTakeOff] = new Airplane(gen, false, delegate);
+        AirplaneMake make = AirplaneMake.makeGenerator();
+        AirplaneModel model = AirplaneModel.modelGenerator(make);
+        UniqueGenerator uniqueIdentifier = new UniqueGenerator();
+        String identifier = uniqueIdentifier.charGenerator(uniqueHolder);
+        uniqueHolder = identifier;
+        fleet[lastTakeOff] = new Airplane(gen, delegate, make, model, identifier);
+        fleet[lastTakeOff].setRandFuel();
         return currentHighestPriority;
     }
 }

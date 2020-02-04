@@ -69,4 +69,11 @@ public enum AirplaneModel {
     public int getPassengers() {
         return passengers;
     }
+
+    public static AirplaneModel returnProperModel(String model) {
+        if (model.equals("9k") || model.equals("320") || model.equals("5000")) {
+            model = 'A' + model ;
+        }
+            return AirplaneModel.valueOf(model);
+    }
 }
