@@ -1,7 +1,8 @@
 package com.company;
 
-import com.company.models.Airline;
-import com.company.models.Make;
+import com.company.interfaces.NumberGenerator;
+import com.company.interfaces.RefuelDelegate;
+import com.company.interfaces.Tickable;
 
 public class Airplane implements Tickable {
 

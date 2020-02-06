@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.interfaces.RefuelDelegate;
+
 public class TestRefuelDelegate implements RefuelDelegate {
 
 

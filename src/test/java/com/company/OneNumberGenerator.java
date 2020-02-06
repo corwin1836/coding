@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.NumberGenerator;
+import com.company.interfaces.NumberGenerator;
 
 public class OneNumberGenerator implements NumberGenerator {
     @Override

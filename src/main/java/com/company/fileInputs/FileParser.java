@@ -1,8 +1,12 @@
-package com.company;
+package com.company.fileInputs;
 
-import com.company.models.Airline;
+import com.company.Airplane;
+import com.company.AirplaneMake;
+import com.company.AirplaneModel;
+import com.company.RandomNumberGenerator;
+import com.company.interfaces.NumberGenerator;
+import com.company.interfaces.RefuelDelegate;
 import com.company.models.Airports;
-import com.company.models.Make;
 import com.company.models.TrafficControl;
 import com.google.gson.Gson;
 

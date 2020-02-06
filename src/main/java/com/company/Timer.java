@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.interfaces.Tickable;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;

@@ -1,6 +1,6 @@
 package com.company;
 
-import org.junit.Before;
+import com.company.interfaces.RefuelDelegate;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,10 +1,8 @@
-package com.company;
+package com.company.fileOutputs;
 
-import com.company.AirplaneLandingFleet;
-import com.company.Airport;
-import com.company.Writer;
+import com.company.*;
+import com.company.interfaces.Writer;
 import com.company.models.Airline;
-import com.company.models.Make;
 import com.company.models.TrafficControl;
 import com.google.gson.Gson;
 

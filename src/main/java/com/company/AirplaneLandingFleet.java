@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.interfaces.NumberGenerator;
+import com.company.interfaces.RefuelDelegate;
+
 public class AirplaneLandingFleet {
 
     private NumberGenerator gen = new RandomNumberGenerator();

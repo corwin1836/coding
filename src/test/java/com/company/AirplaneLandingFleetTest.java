@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.interfaces.RefuelDelegate;
 import org.junit.Test;
 
 public class AirplaneLandingFleetTest {

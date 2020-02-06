@@ -3,11 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirlineCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirportNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileOutputs/AirportSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MyFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/MyFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MyFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileOutputs/MyFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/NumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/RandomNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/RefuelDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/RefuelDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Tickable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/Tickable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Timer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AirplaneLandingFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AirplaneLandingFleetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/OneNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/OneNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestAirplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestRefuelDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestRefuelDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestRunway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestRunway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +185,7 @@
       <module name="Airport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.RefuelDelegate" />
+          <option name="PATTERN" value="com.company.interfaces.RefuelDelegate" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,7 +201,7 @@
       <module name="Airport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.RefuelDelegate" />
+          <option name="PATTERN" value="com.company.interfaces.RefuelDelegate" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,7 +217,7 @@
       <module name="Airport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.RefuelDelegate" />
+          <option name="PATTERN" value="com.company.interfaces.RefuelDelegate" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -349,10 +366,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1102" y="240" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1580704351586" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1580794064314">
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1580966392915">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1580794064314" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1580966392915" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
