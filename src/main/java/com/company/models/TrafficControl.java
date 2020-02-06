@@ -3,21 +3,19 @@ package com.company.models;
 import com.company.Airplane;
 import com.company.AirplaneLandingFleet;
 
+import java.util.Map;
+
 public class TrafficControl {
-    private Airline[] incoming;
-    private Airline[] outgoing;
+    private Map<String, RouteDesignator> routes;
+    private Map<String, Airports> airports;
 
-    public TrafficControl(Airline[] incoming, Airline[] outgoing) {
-        this.incoming = incoming;
-        this.outgoing = outgoing;
-    }
-    public Airline[] getIncoming() {
-        return incoming;
+
+    public Map<String, Airports> getAirports() {
+        return airports;
     }
 
-    public Airline[] getOutgoing() {
-        return outgoing;
+    public Map<String, RouteDesignator> getRoutes() {
+        return routes;
     }
-
 
 }

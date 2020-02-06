@@ -34,8 +34,7 @@ public class AirportSerializer {
             String route = airplanes[i].getUniqueIdentifier();
             String makeString =  make.toString();
             String modelString = model.toString();
-            Make maker = new Make(makeString, modelString);
-            airlines[i] = new Airline(maker, route);
+            airlines[i] = new Airline(makeString, modelString, route);
         }
         return airlines;
     }
@@ -49,8 +48,7 @@ public class AirportSerializer {
             String route = airplanes.get(i).getUniqueIdentifier();
             String makeString = make.toString();
             String modelString = model.toString();
-            Make maker = new Make(makeString, modelString);
-            airlines[i] = new Airline(maker, route);
+            airlines[i] = new Airline(makeString, modelString, route);
         }
         return airlines;
     }

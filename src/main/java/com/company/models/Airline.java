@@ -1,16 +1,17 @@
 package com.company.models;
 
 public class Airline {
-    private Make make;
+    private String make;
+    private String model;
     private String route;
 
-    public Airline(Make make, String route) {
-        this.make = make;
-        this.route = route;
 
-    }
-    public Make getMake() {
+    public String getMake() {
         return make;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     public String getRoute() {

@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Airport.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirportSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MyFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MyFileWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AirplaneLandingFleetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AirplaneLandingFleetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestAirplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestRunway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestRunway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/Airline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/models/TrafficControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,10 +261,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580794223833" />
-    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1580188425118">
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1580878969958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1580188425118" />
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1580878969958" />
     <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580708236857">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -349,6 +341,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1076" y="0" width="844" height="1050" key="dock-window-1/0.0.1920.1050@0.0.1920.1050" timestamp="1579235475936" />
+    <state x="193" y="128" width="1527" height="797" key="new project wizard" timestamp="1580854229073">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="193" y="128" width="1527" height="797" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1580854229073" />
     <state x="1102" y="240" key="run.anything.popup" timestamp="1580704351586">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
