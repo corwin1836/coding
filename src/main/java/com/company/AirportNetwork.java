@@ -20,8 +20,3 @@ public class AirportNetwork {
         }
     }
 }
-
-
-/* DO I want to make a separate class which generates the airlines at each airport or does it make sense to keep it all here?
-I feel like keeping it here makes this class do multiple things which isn't great?
- */

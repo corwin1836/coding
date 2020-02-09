@@ -12,18 +12,17 @@ public class AirlineFleet {
 
     Airplane[] fleet;
     NumberGenerator gen = new RandomNumberGenerator();
-    RefuelDelegate delegate;
 
 
-    public AirlineFleet(Map<String, Airports> airportDump) {
+    public AirlineFleet(Map<String, Airports> airportDump, RefuelDelegate delegate) {
         Set<String> airportName = airportDump.keySet();
         for (String key : airportName) {
             Airports airports = airportDump.get(key);
             Airline[] airline = airports.getPlanes();
             for (int i = 0; i < airline.length; i++) {
-                String make = bob.getMake();
-                String model = bob.getModel();
-                String route = bob.getRoute();
+                String make = airline[i].getMake();
+                String model = airline[i].getModel();
+                String route = airline[i].getRoute();
                 fleet[i] = new Airplane(
                         gen,
                         delegate,
