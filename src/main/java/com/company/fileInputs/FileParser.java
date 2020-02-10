@@ -16,13 +16,14 @@ import java.util.Set;
 public class FileParser{
     private TrafficControl trafficControl;
     private NumberGenerator gen = new RandomNumberGenerator();
+    private RefuelDelegate delegate;
 
     public FileParser(MyFileReader quickReader) throws IOException {
         Gson gson = new Gson();
         trafficControl = gson.fromJson(quickReader.reader("/home/ian/Documents/coding/inputs/planes.json"), TrafficControl.class);
     }
 
-    public Map<String, Airplane[]> buildOutgoing (NumberGenerator generator, RefuelDelegate delegate) {
+    public Map<String, Airplane[]> buildOutgoing () {
         Map<String, Airports> airportsMap = trafficControl.getAirports();
         Set<String> keyset = airportsMap.keySet();
         Airports airports;
@@ -30,22 +31,34 @@ public class FileParser{
         for(String iterator : keyset) {
             airports = airportsMap.get(iterator);
             airlines = airports.getPlanes();
+            this.nonDomainAilineToAirplanes(gen, delegate)
         }
         Airplane[] airplanes = new Airplane[airlines.length];
-        for (int i = 0; i < airlines.length; i += 1) {
-            String make = airlines[i].getMake();
-            String model = airlines[i].getModel();
-            String route = airlines[i].getRoute();
-            airplanes[i] = new Airplane(
-                    generator,
-                    delegate,
-                    AirplaneMake.valueOf(make),
-                    AirplaneModel.returnProperModel(model),
-                    route);
-            airplanes[i].setMaxFuel();
-        }
+
         Map<Airport, Airplane[]> airportAndFleet = new HashMap<>();
         int runways = airports.getRunways();
         return ;
+    }
+
+    private Airplane nonDomainAirlineToAirplane(Airline airline) {
+        String make = airline.getMake();
+        String model = airline.getModel();
+        String uniqueIdentifier = airline.getRoute();
+        return new Airplane(
+                gen,
+                delegate,
+                AirplaneMake.valueOf(make),
+                AirplaneModel.returnProperModel(model),
+                uniqueIdentifier);
+    }
+
+    private Airport airportsToAirport(Airports airports) {
+        int runways = airports.getRunways();
+        Airline[] airplanes = airports.getPlanes();
+        Airplane[] airplane = new Airplane[airplanes.length];
+        for (int i = 0; i < airplanes.length; i += 1) {
+             airplane[i] = nonDomainAirlineToAirplane(airplanes[i]);
+        }
+
     }
 }
