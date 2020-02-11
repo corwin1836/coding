@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -256,10 +258,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580794223833" />
-    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1580878969958">
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1581398248158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1580878969958" />
+    <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1581398248158" />
     <state x="716" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580708236857">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -344,10 +346,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1102" y="240" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1580704351586" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1581229207542">
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1581400744213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1581229207542" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1581400744213" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

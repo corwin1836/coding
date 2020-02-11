@@ -19,6 +19,7 @@ public class Airplane implements Tickable {
     private String uniqueIdentifier;
     private int refuelingTime;
     private RefuelDelegate refueled;
+    private Route route;
 
 
     public Airplane(
@@ -26,7 +27,8 @@ public class Airplane implements Tickable {
             RefuelDelegate refueled,
             AirplaneMake make,
             AirplaneModel model,
-            String uniqueIdentifier
+            String uniqueIdentifier,
+            Route route
     ) {
         planeDesignation++;
         designation = planeDesignation;
@@ -35,6 +37,7 @@ public class Airplane implements Tickable {
         this.uniqueIdentifier = uniqueIdentifier;
         this.generator = generator;
         this.refueled = refueled;
+        this.route = route;
     }
 
     public void takeOff() {
