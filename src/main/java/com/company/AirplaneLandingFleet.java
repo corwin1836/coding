@@ -20,7 +20,7 @@ public class AirplaneLandingFleet {
     }
 
 
-    public Airplane nextToLand() throws Exception{
+    public Airplane nextToLand() {
         return priority.nextToLand(fleet, gen, delegate);
     }
 

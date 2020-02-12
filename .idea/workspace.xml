@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneTakeoffFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneTakeoffFleet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/UniqueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/UniqueGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +70,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

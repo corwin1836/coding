@@ -9,10 +9,11 @@ import com.company.fileInputs.FileParser;
 import com.company.fileInputs.MyFileReader;
 import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
+import com.company.interfaces.TakeoffDelegate;
 
 import java.io.IOException;
 
-public class Airport implements RefuelDelegate {
+public class Airport implements RefuelDelegate, TakeoffDelegate {
 
     private Runway[] runways;
     private AirplaneLandingFleet landingList;
@@ -34,8 +35,8 @@ public class Airport implements RefuelDelegate {
 //        takeoffList = new AirplaneTakeoffFleet(outgoing);
     }
 
-    public void airportControl() throws Exception {
-        for (int i = 0; i < 3; i++) {
+    public void airportControl() {
+        for (int i = 0; i < runways.length; i += 1) {
             if (!runways[i].inUse()) {
                 if (tickCounter % 2 == 0) {
                     final int x = i;
@@ -64,5 +65,9 @@ public class Airport implements RefuelDelegate {
 
     public AirplaneLandingFleet getLandingList() {
         return landingList;
+    }
+
+    public void onTakeoff(Airplane takeoffComplete) {
+        takeoffList.removeAirplane(takeoffComplete);
     }
 }

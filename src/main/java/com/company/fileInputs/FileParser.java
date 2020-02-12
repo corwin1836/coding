@@ -17,7 +17,6 @@ import java.util.Set;
 public class FileParser {
     private TrafficControl trafficControl;
     private NumberGenerator gen = new RandomNumberGenerator();
-    private RefuelDelegate delegate;
 
     public FileParser(MyFileReader quickReader) throws IOException {
         Gson gson = new Gson();
@@ -29,16 +28,16 @@ public class FileParser {
         Map<String, Airports> airportsMap = trafficControl.getAirports();
         Map<String, RouteDesignator> routeMap = trafficControl.getRoutes();
         Set<Map.Entry<String, Airports>> airports = airportsMap.entrySet();
-        Airplane[] airplaneList = new Airplane[100];
 
         for (Map.Entry<String, Airports> next : airports) {
             Airports currentAirports = next.getValue();
             Airport newAirport = airportsToAirport(currentAirports);
             Airline[] newAirline = currentAirports.getPlanes();
+            Airplane[] airplaneList = new Airplane[newAirline.length];
             for (int i = 0; i < newAirline.length; i++) {
                 String airlineRoute = newAirline[i].getRoute();
                 RouteDesignator designatorRoute = routeMap.get(airlineRoute);
-                Airplane newAirplane = nonDomainAirlineToAirplane(newAirline[i], designatorRoute);
+                Airplane newAirplane = nonDomainAirlineToAirplane(newAirline[i], designatorRoute, newAirport);
                 airplaneList[i] = newAirplane;
             }
             AirplaneTakeoffFleet fleet = new AirplaneTakeoffFleet(airplaneList);
@@ -47,7 +46,7 @@ public class FileParser {
         return initialState;
     }
 
-    private Airplane nonDomainAirlineToAirplane(Airline airline, RouteDesignator route) {
+    private Airplane nonDomainAirlineToAirplane(Airline airline, RouteDesignator route, Airport delegate) {
         String make = airline.getMake();
         String model = airline.getModel();
         String uniqueIdentifier = airline.getRoute();
@@ -58,7 +57,8 @@ public class FileParser {
                 AirplaneMake.valueOf(make),
                 AirplaneModel.returnProperModel(model),
                 uniqueIdentifier,
-                planeRoute);
+                planeRoute,
+                delegate);
     }
 
     private Airport airportsToAirport(Airports airports) {

@@ -7,7 +7,7 @@ public class LandingPriorityCalculator {
 
     String uniqueHolder = "AAA-111";
 
-    public Airplane nextToLand(Airplane[] fleet, NumberGenerator gen, RefuelDelegate delegate) throws Exception {
+    public Airplane nextToLand(Airplane[] fleet, NumberGenerator gen, RefuelDelegate delegate) {
         Airplane currentHighestPriority = fleet[0];
         int lastTakeOff = 0;
         for (int i = 0; i < fleet.length; i++) {

@@ -17,17 +17,10 @@ public class Main {
     }
         Timer timer = new Timer();
         Airport laguardia = null;
-        try {
-            laguardia = new Airport(3);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        laguardia = new Airport(3);
         while (goSequence(args)) {
             timer.printCurrentTime();
-            try {
-                laguardia.airportControl();
-            } catch (Exception e) {
-                e.printStackTrace();
+            laguardia.airportControl();
             }
             tickCounter++;
             timer.tick();

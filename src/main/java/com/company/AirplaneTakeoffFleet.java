@@ -42,6 +42,10 @@ public class AirplaneTakeoffFleet {
         fleet.add(newAirplane);
     }
 
+    public void removeAirplane(Airplane movedAirplane) {
+        fleet.remove(movedAirplane);
+    }
+
     public ArrayList<Airplane> getFleet() {
         return fleet;
     }

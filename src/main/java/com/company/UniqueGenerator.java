@@ -2,7 +2,7 @@ package com.company;
 
 public class UniqueGenerator {
 
-    public String charGenerator(String starter) throws Exception {
+    public String charGenerator(String starter) {
         String backEnd = starter.substring(4);
         String frontEnd = starter.substring(0, 3);
         int newlyMintedInt = Integer.parseInt(backEnd);
@@ -19,7 +19,7 @@ public class UniqueGenerator {
                 if (secondChar == 'Z') {
                     secondChar = 'A';
                     if (firstChar == 'Z') {
-                        throw new Exception("You suck you ran my simulator too long. Get a life.");
+                        throw new IllegalStateException("You suck you ran my simulator too long. Get a life.");
                     } else {
                         firstChar += 1;
                     }

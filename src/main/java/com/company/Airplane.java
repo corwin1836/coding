@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
+import com.company.interfaces.TakeoffDelegate;
 import com.company.interfaces.Tickable;
 
 public class Airplane implements Tickable {
@@ -20,6 +21,7 @@ public class Airplane implements Tickable {
     private int refuelingTime;
     private RefuelDelegate refueled;
     private Route route;
+    private TakeoffDelegate takenOff;
 
 
     public Airplane(
@@ -28,7 +30,8 @@ public class Airplane implements Tickable {
             AirplaneMake make,
             AirplaneModel model,
             String uniqueIdentifier,
-            Route route
+            Route route,
+            TakeoffDelegate takenOff
     ) {
         planeDesignation++;
         designation = planeDesignation;
@@ -38,6 +41,7 @@ public class Airplane implements Tickable {
         this.generator = generator;
         this.refueled = refueled;
         this.route = route;
+        this.takenOff = takenOff;
     }
 
     public void takeOff() {
@@ -100,6 +104,7 @@ public class Airplane implements Tickable {
             takeoffTime--;
             if (takeoffTime == 0) {
                 off = true;
+                takenOff.onTakeoff(this);
                 System.out.println(designation +" "+ uniqueIdentifier + " " + make + " " + model +" "+ "Has taken off!");
             }
         }
@@ -110,7 +115,7 @@ public class Airplane implements Tickable {
                 System.out.println(designation +" "+ uniqueIdentifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
             }
         }
-        if (landingTime == 0 && refuelingTime >0) {
+        if (landingTime == 0 && refuelingTime > 0) {
             refuelingTime -= 1;
             if (refuelingTime == 0) {
                 refueled.onRefuelCompleted(this);
