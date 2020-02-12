@@ -8,7 +8,7 @@ public class AirplaneLandingFleet {
     private NumberGenerator gen = new RandomNumberGenerator();
     private Airplane[] fleet;
     private RefuelDelegate delegate;
-    LandingPriorityCalculator priority;
+    private LandingPriorityCalculator priority;
 
 
     public AirplaneLandingFleet(Airplane[] landingList) {
@@ -20,7 +20,7 @@ public class AirplaneLandingFleet {
     }
 
 
-    public Airplane nextToLand() {
+    public Airplane nextToLand(delegate) {
         return priority.nextToLand(fleet, gen, delegate);
     }
 

@@ -46,7 +46,7 @@ public class Airport implements RefuelDelegate, TakeoffDelegate {
                     });
 
                 } else {
-                    Airplane leastFuel = landingList.nextToLand();
+                    Airplane leastFuel = landingList.nextToLand(this);
                     runways[i].landPlane(leastFuel);
                 }
             }
