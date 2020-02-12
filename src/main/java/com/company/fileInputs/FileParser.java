@@ -25,35 +25,26 @@ public class FileParser {
     }
 
     public Map<Airport, AirplaneTakeoffFleet> initialState() {
+        Map<Airport, AirplaneTakeoffFleet> initialState = new HashMap<>();
         Map<String, Airports> airportsMap = trafficControl.getAirports();
         Map<String, RouteDesignator> routeMap = trafficControl.getRoutes();
         Set<Map.Entry<String, Airports>> airports = airportsMap.entrySet();
-
+        Airplane[] airplaneList = new Airplane[100];
 
         for (Map.Entry<String, Airports> next : airports) {
             Airports currentAirports = next.getValue();
             Airport newAirport = airportsToAirport(currentAirports);
             Airline[] newAirline = currentAirports.getPlanes();
-            for(int i = 0; i < newAirline.length; i++) {
+            for (int i = 0; i < newAirline.length; i++) {
                 String airlineRoute = newAirline[i].getRoute();
                 RouteDesignator designatorRoute = routeMap.get(airlineRoute);
                 Airplane newAirplane = nonDomainAirlineToAirplane(newAirline[i], designatorRoute);
+                airplaneList[i] = newAirplane;
             }
-
+            AirplaneTakeoffFleet fleet = new AirplaneTakeoffFleet(airplaneList);
+            initialState.put(newAirport, fleet);
         }
-
-        Airports airports;
-        Airline[] airlines = new Airline[keyset.size()];
-        for (String iterator : keyset) {
-            airports = airportsMap.get(iterator);
-            airlines = airports.getPlanes();
-            this.nonDomainAirlineToAirplane();
-        }
-        Airplane[] airplanes = new Airplane[airlines.length];
-
-        Map<Airport, Airplane[]> airportAndFleet = new HashMap<>();
-        int runways = airports.getRunways();
-        return;
+        return initialState;
     }
 
     private Airplane nonDomainAirlineToAirplane(Airline airline, RouteDesignator route) {
