@@ -2,12 +2,13 @@ package com.company;
 
 import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
+import com.company.interfaces.TakeoffDelegate;
 
 public class AirplaneLandingFleet {
 
     private NumberGenerator gen = new RandomNumberGenerator();
     private Airplane[] fleet;
-    private RefuelDelegate delegate;
+    private Airport delegate;
     private LandingPriorityCalculator priority;
 
 
@@ -20,8 +21,8 @@ public class AirplaneLandingFleet {
     }
 
 
-    public Airplane nextToLand(delegate) {
-        return priority.nextToLand(fleet, gen, delegate);
+    public Airplane nextToLand(Route route) {
+        return priority.nextToLand(fleet, gen, route, delegate);
     }
 
     public Airplane[] getFleet() {
