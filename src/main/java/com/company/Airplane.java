@@ -95,6 +95,10 @@ public class Airplane implements Tickable {
         return model;
     }
 
+    public Route getRoute() {
+        return route;
+    }
+
     public void tick() {
         if (taxiTime > 0) {
             taxiTime--;

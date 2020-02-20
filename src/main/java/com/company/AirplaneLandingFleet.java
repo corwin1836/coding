@@ -4,10 +4,13 @@ import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
 import com.company.interfaces.TakeoffDelegate;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class AirplaneLandingFleet {
 
     private NumberGenerator gen = new RandomNumberGenerator();
-    private Airplane[] fleet;
+    private ArrayList<Airplane> fleet;
     private Airport delegate;
     private LandingPriorityCalculator priority;
 
@@ -16,16 +19,21 @@ public class AirplaneLandingFleet {
         if (landingList.length < 1) {
             throw new IllegalStateException();
         }
-        fleet = landingList;
+        Collections.addAll(fleet, landingList);
         priority = new LandingPriorityCalculator();
     }
 
 
     public Airplane nextToLand(Route route) {
-        return priority.nextToLand(fleet, gen, route, delegate);
+        Airplane[] retFleet = fleet.toArray(new Airplane[0]);
+        return priority.nextToLand(retFleet, gen, route, delegate);
     }
 
-    public Airplane[] getFleet() {
+    public void addAirplane(Airplane additional) {
+        fleet.add(additional);
+    }
+
+    public ArrayList<Airplane> getFleet() {
         return fleet;
     }
 }
