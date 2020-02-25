@@ -31,7 +31,8 @@ public class FileParser {
 
         for (Map.Entry<String, Airports> next : airports) {
             Airports currentAirports = next.getValue();
-            Airport newAirport = airportsToAirport(currentAirports);
+            String currentName = next.getKey();
+            Airport newAirport = airportsToAirport(currentName, currentAirports);
             Airline[] newAirline = currentAirports.getPlanes();
             Airplane[] airplaneList = new Airplane[newAirline.length];
             for (int i = 0; i < newAirline.length; i++) {
@@ -61,9 +62,10 @@ public class FileParser {
                 delegate);
     }
 
-    private Airport airportsToAirport(Airports airports) {
+    private Airport airportsToAirport(String name, Airports airports) {
         int runways = airports.getRunways();
-        return new Airport(runways);
+
+        return new Airport(runways, name);
     }
 
     private Route routesToDestinations(RouteDesignator routes) {

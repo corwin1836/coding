@@ -7,7 +7,7 @@ public class LandingPriorityCalculator {
 
     String uniqueHolder = "AAA-111";
 
-    public Airplane nextToLand(Airplane[] fleet, NumberGenerator gen, Route route, Airport delegate) {
+    public Airplane nextToLand(Airplane[] fleet) {
         Airplane currentHighestPriority = fleet[0];
         int lastTakeOff = 0;
         for (int i = 0; i < fleet.length; i++) {
@@ -32,13 +32,13 @@ public class LandingPriorityCalculator {
                 lastTakeOff = i;
             }
         }
-        AirplaneMake make = AirplaneMake.makeGenerator();
-        AirplaneModel model = AirplaneModel.modelGenerator(make);
-        UniqueGenerator uniqueIdentifier = new UniqueGenerator();
-        String identifier = uniqueIdentifier.charGenerator(uniqueHolder);
-        uniqueHolder = identifier;
-        fleet[lastTakeOff] = new Airplane(gen, delegate, make, model, identifier, route, delegate);
-        fleet[lastTakeOff].setRandFuel();
+//        AirplaneMake make = AirplaneMake.makeGenerator();
+//        AirplaneModel model = AirplaneModel.modelGenerator(make);
+//        UniqueGenerator uniqueIdentifier = new UniqueGenerator();
+//        String identifier = uniqueIdentifier.charGenerator(uniqueHolder);
+//        uniqueHolder = identifier;
+//        fleet[lastTakeOff] = new Airplane(gen, delegate, make, model, identifier, route, delegate);
+//        fleet[lastTakeOff].setRandFuel();
         return currentHighestPriority;
     }
 }

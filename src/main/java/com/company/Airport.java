@@ -7,20 +7,23 @@ package com.company;
 
 import com.company.fileInputs.FileParser;
 import com.company.fileInputs.MyFileReader;
+import com.company.interfaces.AirplaneTakeoffDelegate;
+import com.company.interfaces.AirportTakeoffDelegate;
 import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
-import com.company.interfaces.TakeoffDelegate;
+import com.company.interfaces.AirplaneTakeoffDelegate;
 
 import java.io.IOException;
 
-public class Airport implements RefuelDelegate, TakeoffDelegate {
+public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
 
     private Runway[] runways;
     private AirplaneLandingFleet landingList;
     private int tickCounter = 0;
     private AirplaneTakeoffFleet takeoffList;
+    private String airportName;
 
-    public Airport(int runwayNumber) {
+    public Airport(int runwayNumber, String airportName) {
 //        NumberGenerator gen = new RandomNumberGenerator();
 //        MyFileReader reader = new MyFileReader();
 //        FileParser parser = new FileParser(reader);
@@ -31,8 +34,7 @@ public class Airport implements RefuelDelegate, TakeoffDelegate {
             Runway x = new Runway();
             runways[i] = x;
         }
-//        landingList = new AirplaneLandingFleet(incoming);
-//        takeoffList = new AirplaneTakeoffFleet(outgoing);
+        this.airportName = airportName;
     }
 
     public void airportControl() {
@@ -46,6 +48,7 @@ public class Airport implements RefuelDelegate, TakeoffDelegate {
                     });
 
                 } else {
+
                     Airplane leastFuel = landingList.nextToLand();
                     runways[i].landPlane(leastFuel);
                 }
@@ -67,7 +70,12 @@ public class Airport implements RefuelDelegate, TakeoffDelegate {
         return landingList;
     }
 
+    public String getAirportName() {
+        return airportName;
+    }
+
     public void onTakeoff(Airplane takeoffComplete) {
         takeoffList.removeAirplane(takeoffComplete);
     }
+
 }

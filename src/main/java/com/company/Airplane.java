@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
-import com.company.interfaces.TakeoffDelegate;
+import com.company.interfaces.AirplaneTakeoffDelegate;
 import com.company.interfaces.Tickable;
 
 public class Airplane implements Tickable {
@@ -21,7 +21,7 @@ public class Airplane implements Tickable {
     private int refuelingTime;
     private RefuelDelegate refueled;
     private Route route;
-    private TakeoffDelegate takenOff;
+    private AirplaneTakeoffDelegate takenOff;
 
 
     public Airplane(
@@ -31,7 +31,7 @@ public class Airplane implements Tickable {
             AirplaneModel model,
             String uniqueIdentifier,
             Route route,
-            TakeoffDelegate takenOff
+            AirplaneTakeoffDelegate takenOff
     ) {
         planeDesignation++;
         designation = planeDesignation;
@@ -97,6 +97,10 @@ public class Airplane implements Tickable {
 
     public Route getRoute() {
         return route;
+    }
+
+    public void setTakenOff(AirplaneTakeoffDelegate delegate) {
+        takenOff = delegate;
     }
 
     public void tick() {

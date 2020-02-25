@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/AirplaneTakeoffDelegate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirportNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/interfaces/TakeoffDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/TakeoffDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/interfaces/AirportCoordinator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/interfaces/TakeoffDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/AirportTakeoffDelegate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +114,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Airport">
+  <component name="RunManager" selected="Application.AirportMain">
     <configuration name="AirportMain" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Airport" />

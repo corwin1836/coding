@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.interfaces.NumberGenerator;
 import com.company.interfaces.RefuelDelegate;
-import com.company.interfaces.TakeoffDelegate;
+import com.company.interfaces.AirplaneTakeoffDelegate;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,9 +24,9 @@ public class AirplaneLandingFleet {
     }
 
 
-    public Airplane nextToLand(Route route) {
+    public Airplane nextToLand() {
         Airplane[] retFleet = fleet.toArray(new Airplane[0]);
-        return priority.nextToLand(retFleet, gen, route, delegate);
+        return priority.nextToLand(retFleet);
     }
 
     public void addAirplane(Airplane additional) {
