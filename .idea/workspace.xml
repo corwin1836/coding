@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49af07a3-b10c-4641-89f0-a9d6c8258c03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/AirplaneTakeoffDelegate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirlineFleet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirplaneLandingFleet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Airport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/AirportNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/AirportNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LandingPriorityCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileInputs/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/interfaces/AirportCoordinator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/interfaces/TakeoffDelegate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/interfaces/AirportTakeoffDelegate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/fileOutputs/AirportSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/fileOutputs/AirportSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestAirplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestAirplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/TestRunway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/TestRunway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +70,8 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -261,10 +260,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580794223833">
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582694965063">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1580794223833" />
+    <state x="422" y="186" width="1118" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582694965063" />
     <state x="771" y="240" width="378" height="574" key="#com.intellij.ide.util.MemberChooser" timestamp="1582178277332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -293,22 +292,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="286" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1580789302673" />
-    <state width="1872" height="290" key="GridCell.Tab.0.bottom" timestamp="1580795763325">
+    <state width="1872" height="290" key="GridCell.Tab.0.bottom" timestamp="1582697323636">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1580795763325" />
-    <state width="1872" height="290" key="GridCell.Tab.0.center" timestamp="1580795763324">
+    <state width="1872" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582697323636" />
+    <state width="1872" height="290" key="GridCell.Tab.0.center" timestamp="1582697323636">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="290" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1580795763324" />
-    <state width="1872" height="290" key="GridCell.Tab.0.left" timestamp="1580795763324">
+    <state width="1872" height="290" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582697323636" />
+    <state width="1872" height="290" key="GridCell.Tab.0.left" timestamp="1582697323636">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="290" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1580795763324" />
-    <state width="1872" height="290" key="GridCell.Tab.0.right" timestamp="1580795763325">
+    <state width="1872" height="290" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582697323636" />
+    <state width="1872" height="290" key="GridCell.Tab.0.right" timestamp="1582697323636">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1872" height="290" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1580795763325" />
+    <state width="1872" height="290" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582697323636" />
     <state width="1872" height="344" key="GridCell.Tab.1.bottom" timestamp="1580791423202">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

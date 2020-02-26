@@ -20,7 +20,7 @@ public class FileParser {
 
     public FileParser(MyFileReader quickReader) throws IOException {
         Gson gson = new Gson();
-        trafficControl = gson.fromJson(quickReader.reader("/home/ian/Documents/coding/inputs/planes.json"), TrafficControl.class);
+        trafficControl = gson.fromJson(quickReader.reader("/home/ian/Documents/coding/inputs/multiAirports/airport.json"), TrafficControl.class);
     }
 
     public Map<Airport, AirplaneTakeoffFleet> initialState() {

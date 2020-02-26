@@ -25,6 +25,8 @@ public class AirportNetwork implements AirportTakeoffDelegate {
 
     @Override
     public void onTakeoff(Airplane takeoffComplete, Airport previousAirport) {
+        String airplaneName = takeoffComplete.getUniqueIdentifier();
+        String previousAirportName = previousAirport.getAirportName();
         Route nextDestination = takeoffComplete.getRoute();
         String destination0 = nextDestination.getDestination0();
         String destination1 = nextDestination.getDestination1();
@@ -42,8 +44,16 @@ public class AirportNetwork implements AirportTakeoffDelegate {
                 newFleetToAddTo = name.getLandingList();
                 newFleetToAddTo.addAirplane(takeoffComplete);
                 takeoffComplete.setTakenOff(name);
+                System.out.println("Airplane: "+airplaneName+ "has departed from: "+previousAirportName+ " heading to: "+destinationActual);
                 break;
             }
+        }
+
+    }
+
+    public void airportNetworkControl() {
+        for (Airport airport : airports) {
+            airport.airportControl();
         }
     }
 
