@@ -99,7 +99,7 @@ public class Airplane implements Tickable {
         return route;
     }
 
-    public void setTakenOff(AirplaneTakeoffDelegate delegate) {
+    public void setTakenOffDelegate(AirplaneTakeoffDelegate delegate) {
         takenOff = delegate;
     }
 

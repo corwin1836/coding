@@ -5,5 +5,5 @@ import com.company.Airport;
 
 public interface AirplaneTakeoffDelegate {
 
-        void onTakeoff(Airplane previousAirport);
+        void onTakeoff(Airplane airplane);
 }

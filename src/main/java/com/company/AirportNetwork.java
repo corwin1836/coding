@@ -1,14 +1,8 @@
 package com.company;
 
 import com.company.fileInputs.FileParser;
-import com.company.fileInputs.MyFileReader;
 import com.company.interfaces.AirportTakeoffDelegate;
-import com.company.interfaces.AirportTakeoffDelegate;
-import com.company.models.Airline;
-import com.company.models.Airports;
 
-import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -20,17 +14,20 @@ public class AirportNetwork implements AirportTakeoffDelegate {
         Map<Airport, AirplaneTakeoffFleet> airportState;
         airportState = parser.initialState();
         airports = airportState.keySet();
+        for (Airport name : airports) {
+            name.setAirportTakenoffDelegate(this);
+        }
     }
 
 
     @Override
-    public void onTakeoff(Airplane takeoffComplete, Airport previousAirport) {
+    public void onTakeoff(Airplane takeoffComplete, Airport currentAirport) {
         String airplaneName = takeoffComplete.getUniqueIdentifier();
-        String previousAirportName = previousAirport.getAirportName();
+        String previousAirportName = currentAirport.getAirportName();
         Route nextDestination = takeoffComplete.getRoute();
         String destination0 = nextDestination.getDestination0();
         String destination1 = nextDestination.getDestination1();
-        String destinationMaybe = previousAirport.getAirportName();
+        String destinationMaybe = currentAirport.getAirportName();
         String destinationActual;
         AirplaneLandingFleet newFleetToAddTo;
         if (destinationMaybe.equals(destination0)) {
@@ -43,7 +40,7 @@ public class AirportNetwork implements AirportTakeoffDelegate {
             if (destinationActual.equals(currentName)) {
                 newFleetToAddTo = name.getLandingList();
                 newFleetToAddTo.addAirplane(takeoffComplete);
-                takeoffComplete.setTakenOff(name);
+                takeoffComplete.setTakenOffDelegate(name);
                 System.out.println("Airplane: "+airplaneName+ "has departed from: "+previousAirportName+ " heading to: "+destinationActual);
                 break;
             }

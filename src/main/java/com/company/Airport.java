@@ -22,6 +22,7 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
     private int tickCounter = 0;
     private AirplaneTakeoffFleet takeoffList;
     private String airportName;
+    private AirportTakeoffDelegate takenoff;
 
     public Airport(int runwayNumber, String airportName) {
 //        NumberGenerator gen = new RandomNumberGenerator();
@@ -54,6 +55,7 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
                 }
             }
             runways[i].tick();
+
         }
         tickCounter++;
     }
@@ -74,8 +76,13 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
         return airportName;
     }
 
+    public void setAirportTakenoffDelegate(AirportTakeoffDelegate delegate){
+        takenoff = delegate;
+    }
+
     public void onTakeoff(Airplane takeoffComplete) {
         takeoffList.removeAirplane(takeoffComplete);
+        takenoff.onTakeoff(takeoffComplete, this);
     }
 
 }
