@@ -25,20 +25,17 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
     private AirportTakeoffDelegate takenoff;
 
     public Airport(int runwayNumber, String airportName) {
-//        NumberGenerator gen = new RandomNumberGenerator();
-//        MyFileReader reader = new MyFileReader();
-//        FileParser parser = new FileParser(reader);
-//        Airplane[] outgoing = parser.buildOutgoing(gen, this);
-//        Airplane[] incoming = parser.buildIncoming(gen, this);
         runways = new Runway[runwayNumber];
         for (int i = 0; i < runways.length; i++) {
             Runway x = new Runway();
             runways[i] = x;
         }
         this.airportName = airportName;
+        Airplane[] landingFleetArray = new Airplane[0];
+        landingList = new AirplaneLandingFleet(landingFleetArray);
     }
 
-    public void airportControl() {
+    public void airportControl(AirplaneTakeoffFleet takeoffList) {
         for (int i = 0; i < runways.length; i += 1) {
             if (!runways[i].inUse()) {
                 if (tickCounter % 2 == 0) {
@@ -49,9 +46,11 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
                     });
 
                 } else {
-
-                    Airplane leastFuel = landingList.nextToLand();
-                    runways[i].landPlane(leastFuel);
+                    int fleetSize = landingList.getFleetSize();
+                    if (fleetSize >= 1) {
+                        Airplane leastFuel = landingList.nextToLand();
+                        runways[i].landPlane(leastFuel);
+                    }
                 }
             }
             runways[i].tick();

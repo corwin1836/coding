@@ -8,13 +8,13 @@ import java.util.Set;
 
 public class AirportNetwork implements AirportTakeoffDelegate {
 
-    private Set<Airport> airports;
+    private Set<Map.Entry<Airport, AirplaneTakeoffFleet>> airports;
 
     public AirportNetwork(FileParser parser) {
         Map<Airport, AirplaneTakeoffFleet> airportState;
         airportState = parser.initialState();
-        airports = airportState.keySet();
-        for (Airport name : airports) {
+        airports = airportState.entrySet();
+        for (Map.Entry<Airport, AirplaneTakeoffFleet> name : airports) {
             name.setAirportTakenoffDelegate(this);
         }
     }
@@ -49,8 +49,10 @@ public class AirportNetwork implements AirportTakeoffDelegate {
     }
 
     public void airportNetworkControl() {
-        for (Airport airport : airports) {
-            airport.airportControl();
+        for (Map.Entry<Airport, AirplaneTakeoffFleet> airportAirplaneTakeoffFleetEntry: airports) {
+            Airport airport = airportAirplaneTakeoffFleetEntry.getKey();
+            AirplaneTakeoffFleet offFleet = airportAirplaneTakeoffFleetEntry.getValue();
+            airport.airportControl(offFleet);
         }
     }
 

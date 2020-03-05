@@ -16,9 +16,6 @@ public class AirplaneLandingFleet {
 
 
     public AirplaneLandingFleet(Airplane[] landingList) {
-        if (landingList.length < 1) {
-            throw new IllegalStateException();
-        }
         Collections.addAll(fleet, landingList);
         priority = new LandingPriorityCalculator();
     }
@@ -35,5 +32,9 @@ public class AirplaneLandingFleet {
 
     public ArrayList<Airplane> getFleet() {
         return fleet;
+    }
+
+    public int getFleetSize() {
+        return fleet.size();
     }
 }
