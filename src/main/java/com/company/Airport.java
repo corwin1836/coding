@@ -33,6 +33,7 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
         this.airportName = airportName;
         Airplane[] landingFleetArray = new Airplane[0];
         landingList = new AirplaneLandingFleet(landingFleetArray);
+
     }
 
     public void airportControl(AirplaneTakeoffFleet takeoffList) {
@@ -77,6 +78,10 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
 
     public void setAirportTakenoffDelegate(AirportTakeoffDelegate delegate){
         takenoff = delegate;
+    }
+
+    public void setTakeoffList(AirplaneTakeoffFleet fleet) {
+        takeoffList = fleet;
     }
 
     public void onTakeoff(Airplane takeoffComplete) {

@@ -113,14 +113,14 @@ public class Airplane implements Tickable {
             if (takeoffTime == 0) {
                 off = true;
                 takenOff.onTakeoff(this);
-                System.out.println(designation +" "+ uniqueIdentifier + " " + "Destination: " + route +" " + make + " " + model +" "+ "Has taken off!");
+               // System.out.println(designation +" "+ uniqueIdentifier + " " + "Destination: " + route +" " + make + " " + model +" "+ "Has taken off!");
             }
         }
         if (landingTime > 0) {
             landingTime--;
             if (landingTime == 0) {
                 off = false;
-                System.out.println(designation +" "+ uniqueIdentifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
+               // System.out.println(designation +" "+ uniqueIdentifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
             }
         }
         if (landingTime == 0 && refuelingTime > 0) {

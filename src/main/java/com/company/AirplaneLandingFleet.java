@@ -10,7 +10,7 @@ import java.util.Collections;
 public class AirplaneLandingFleet {
 
     private NumberGenerator gen = new RandomNumberGenerator();
-    private ArrayList<Airplane> fleet;
+    private ArrayList<Airplane> fleet = new ArrayList<>();
     private Airport delegate;
     private LandingPriorityCalculator priority;
 
