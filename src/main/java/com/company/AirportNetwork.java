@@ -43,8 +43,8 @@ public class AirportNetwork implements AirportTakeoffDelegate {
                 AirplaneLandingFleet newFleetToAddTo = airport.getLandingList();
                 newFleetToAddTo.addAirplane(takeoffComplete);
                 takeoffComplete.setTakenOffDelegate(airport);
-                System.out.println("Airplane: "+airplaneName+ "has departed from: "+currentAirportName+ " heading to: "+finalDestination);
-                //Change print out to String Format function output.
+                String output = String.format("Airplane: %s has departed from: %s heading to  %s!", airplaneName, currentAirportName, finalDestination);
+                System.out.println(output);
                 break;
             }
         }
@@ -57,5 +57,4 @@ public class AirportNetwork implements AirportTakeoffDelegate {
             airport.airportControl(offFleet);
         }
     }
-
 }

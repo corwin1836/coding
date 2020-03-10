@@ -120,7 +120,7 @@ public class Airplane implements Tickable {
             landingTime--;
             if (landingTime == 0) {
                 off = false;
-               // System.out.println(designation +" "+ uniqueIdentifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
+                System.out.println(designation +" "+ uniqueIdentifier +" "+ make + " " + model +" "+ "Has landed! YAY!");
             }
         }
         if (landingTime == 0 && refuelingTime > 0) {

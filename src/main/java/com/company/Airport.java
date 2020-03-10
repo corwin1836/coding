@@ -51,6 +51,7 @@ public class Airport implements RefuelDelegate, AirplaneTakeoffDelegate {
                     if (fleetSize >= 1) {
                         Airplane leastFuel = landingList.nextToLand();
                         runways[i].landPlane(leastFuel);
+                        landingList.removeAirplane(leastFuel);
                     }
                 }
             }

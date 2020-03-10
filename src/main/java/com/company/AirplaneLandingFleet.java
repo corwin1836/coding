@@ -37,4 +37,8 @@ public class AirplaneLandingFleet {
     public int getFleetSize() {
         return fleet.size();
     }
+
+    public void removeAirplane(Airplane leastFuel) {
+        fleet.remove(leastFuel);
+    }
 }

@@ -21,7 +21,7 @@ public class Runway {
     }
 
     public void landPlane(Airplane x) {
-        this.currentPlane = x;
+        currentPlane = x;
         x.landing();
         isTakingOff = false;
     }
