@@ -14,7 +14,7 @@ public class Runway {
             if (isTakingOff && currentPlane.hasTakenOff()) {
                 currentPlane = null;
             }
-            if (!isTakingOff && currentPlane.hasLanded()) {
+            if (!isTakingOff && currentPlane.hasLanded() && currentPlane.getRefuelingTime() == 0) {
                 currentPlane = null;
             }
         }
